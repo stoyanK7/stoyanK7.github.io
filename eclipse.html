@@ -24,11 +24,11 @@
         <link rel="stylesheet" href="/css/default.min.css">
         <script src="/js/highlight.min.js"></script>
         <script>
-        document.querySelectorAll('div.source pre').forEach(el => {
-          console.log(el);
-          hljs.highlightElement(el);
-        });
-        console.log(hljs);
+          console.log(hljs);
+          hljs.configure({
+            cssSelector: 'div.source pre'
+          });
+          hljs.highlightAll();
         </script>
   </head>
   <body class="composite">
