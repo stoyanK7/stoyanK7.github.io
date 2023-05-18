@@ -3413,9 +3413,9 @@
 						<td>
 							
 						</td>
-							<td title="SlistHandler uses CaseHandler">
-								1
-							</td>
+							<td class="cycle" title="SlistHandler has cycle dependency with CaseHandler">
+								1C
+							</td> 
 						<td>
 							
 						</td>
@@ -3656,9 +3656,9 @@
 						<td>
 							
 						</td>
-							<td class="cycle" title="IfHandler has cycle dependency with ElseHandler">
-								1C
-							</td> 
+							<td title="IfHandler uses ElseHandler">
+								1
+							</td>
 						<td>
 							
 						</td>
@@ -4271,12 +4271,12 @@
 						<td>
 							
 						</td>
-							<td class="cycle" title="IfHandler has cycle dependency with BlockParentHandler">
-								2C
-							</td> 
-							<td title="SlistHandler uses BlockParentHandler">
+							<td title="IfHandler uses BlockParentHandler">
 								2
 							</td>
+							<td class="cycle" title="SlistHandler has cycle dependency with BlockParentHandler">
+								2C
+							</td> 
 							<td class="cycle" title="AnnotationArrayInitHandler has cycle dependency with BlockParentHandler">
 								2C
 							</td> 
@@ -4397,9 +4397,9 @@
 							<td class="cycle" title="IfHandler has cycle dependency with AbstractExpressionHandler">
 								3C
 							</td> 
-							<td title="SlistHandler uses AbstractExpressionHandler">
-								3
-							</td>
+							<td class="cycle" title="SlistHandler has cycle dependency with AbstractExpressionHandler">
+								3C
+							</td> 
 							<td class="cycle" title="AnnotationArrayInitHandler has cycle dependency with AbstractExpressionHandler">
 								1C
 							</td> 
@@ -4517,9 +4517,9 @@
 							<td class="cycle" title="LambdaHandler has cycle dependency with IndentationCheck">
 								2C
 							</td> 
-							<td class="cycle" title="IfHandler has cycle dependency with IndentationCheck">
-								1C
-							</td> 
+							<td title="IfHandler uses IndentationCheck">
+								1
+							</td>
 							<td class="cycle" title="SlistHandler has cycle dependency with IndentationCheck">
 								1C
 							</td> 

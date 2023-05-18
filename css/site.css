@@ -60,7 +60,8 @@ h2:hover .anchor, h3:hover .anchor {
 .source > pre {
   margin: 0;
   padding: 12px;
-  width: max-content;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .wrap-content pre {
