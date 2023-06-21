@@ -10,51 +10,9 @@
             url = url.substring(0, position);
         }
 
-        const sources = document.querySelectorAll('div.source');
-        [].forEach.call(sources, function (source) {
-            const previousSibling = source.previousSibling.previousSibling;
-            const id = previousSibling.id;
-            if (!id) {
-                return;
-            }
-            if (previousSibling.localName !== "div") {
-                console.log("yes")
-                return;
-            }
-            const link = "" + url + "#" + id + "";
-
-            const a = document.createElement("a");
-            a.setAttribute("href", link);
-
-            const image = document.createElement("img");
-            image.setAttribute("src", "images/anchor.png");
-
-            const anchor = document.createElement("div");
-            anchor.className = "anchor";
-
-            a.appendChild(image);
-            anchor.appendChild(a);
-            source.insertBefore(anchor, source.firstChild);
-        });
-
-        const exampleDivs = document.querySelectorAll('p[id*="Example"]');
-        [].forEach.call(exampleDivs, function (exampleDiv) {
-            var name = exampleDiv.id;
-            var link = "" + url + "#" + name + "";
-    
-            var a = document.createElement("a");
-            a.setAttribute("href", link);
-    
-            var image = document.createElement("img");
-            image.setAttribute("src", "images/anchor.png");
-    
-            var anchor = document.createElement("div");
-            anchor.className = "anchor";
-    
-            a.appendChild(image);
-            anchor.appendChild(a);
-            exampleDiv.appendChild(anchor);
-        });
+        const scriptElement = document.querySelector('script[src*="anchors.js"]');
+        const scriptElementSrc = scriptElement.attributes.src.textContent;
+        const relativePath = scriptElementSrc.replace(/\/js\/anchors.js/, '');
 
         var anchors = document.getElementsByTagName("h2");
         [].forEach.call(anchors, function (anchorItem) {
@@ -65,7 +23,7 @@
             a.setAttribute("href", link);
 
             var image = document.createElement("img");
-            image.setAttribute("src", "images/anchor.png");
+            image.setAttribute("src", `${relativePath}/images/anchor.png`);
 
             var anchor = document.createElement("div");
             anchor.className = "anchor";
@@ -89,7 +47,7 @@
             a.setAttribute("href", link);
 
             var image = document.createElement("img");
-            image.setAttribute("src", "images/anchor.png");
+            image.setAttribute("src", `${relativePath}/images/anchor.png`);
 
             var anchor = document.createElement("div");
             anchor.className = "anchor";

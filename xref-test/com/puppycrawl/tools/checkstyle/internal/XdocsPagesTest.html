@@ -92,7 +92,7 @@
 <a class="jxr_linenumber" name="L84" href="#L84">84</a>  
 <a class="jxr_linenumber" name="L85" href="#L85">85</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> Path AVAILABLE_CHECKS_PATH = Paths.get(<span class="jxr_string">"src/xdocs/checks.xml"</span>);
 <a class="jxr_linenumber" name="L86" href="#L86">86</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> String LINK_TEMPLATE =
-<a class="jxr_linenumber" name="L87" href="#L87">87</a>              <span class="jxr_string">"(?s).*&lt;a href=\&quot;config_&#92;&#92;w+&#92;&#92;.html#%1$s\&quot;&gt;(&#92;&#92;s)*%1$s&lt;/a&gt;.*"</span>;
+<a class="jxr_linenumber" name="L87" href="#L87">87</a>              <span class="jxr_string">"(?s).*&lt;a href=\&quot;[^\&quot;]+#%1$s\&quot;&gt;([&#92;&#92;r&#92;&#92;n&#92;&#92;s])*%1$s([&#92;&#92;r&#92;&#92;n&#92;&#92;s])*&lt;/a&gt;.*"</span>;
 <a class="jxr_linenumber" name="L88" href="#L88">88</a>  
 <a class="jxr_linenumber" name="L89" href="#L89">89</a>      <strong class="jxr_keyword">private</strong> <strong class="jxr_keyword">static</strong> <strong class="jxr_keyword">final</strong> Pattern VERSION = Pattern.compile(<span class="jxr_string">"&#92;&#92;d+&#92;&#92;.&#92;&#92;d+(&#92;&#92;.&#92;&#92;d+)?"</span>);
 <a class="jxr_linenumber" name="L90" href="#L90">90</a>  
@@ -1661,75 +1661,78 @@
 <a class="jxr_linenumber" name="L1653" href="#L1653">1653</a>         <strong class="jxr_keyword">while</strong> (itrChecks.hasNext()) {
 <a class="jxr_linenumber" name="L1654" href="#L1654">1654</a>             <strong class="jxr_keyword">final</strong> Node module = itrChecks.next();
 <a class="jxr_linenumber" name="L1655" href="#L1655">1655</a>             <strong class="jxr_keyword">final</strong> String moduleName = module.getTextContent().trim();
-<a class="jxr_linenumber" name="L1656" href="#L1656">1656</a> 
-<a class="jxr_linenumber" name="L1657" href="#L1657">1657</a>             <strong class="jxr_keyword">if</strong> (!module.getAttributes().getNamedItem(<span class="jxr_string">"href"</span>).getTextContent()
-<a class="jxr_linenumber" name="L1658" href="#L1658">1658</a>                     .startsWith(<span class="jxr_string">"config_"</span>)) {
-<a class="jxr_linenumber" name="L1659" href="#L1659">1659</a>                 <strong class="jxr_keyword">continue</strong>;
-<a class="jxr_linenumber" name="L1660" href="#L1660">1660</a>             }
-<a class="jxr_linenumber" name="L1661" href="#L1661">1661</a> 
-<a class="jxr_linenumber" name="L1662" href="#L1662">1662</a>             assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span> + moduleName
-<a class="jxr_linenumber" name="L1663" href="#L1663">1663</a>                         + <span class="jxr_string">"' shouldn't end with 'Check'"</span>)
-<a class="jxr_linenumber" name="L1664" href="#L1664">1664</a>                     .that(moduleName.endsWith(<span class="jxr_string">"Check"</span>))
-<a class="jxr_linenumber" name="L1665" href="#L1665">1665</a>                     .isFalse();
-<a class="jxr_linenumber" name="L1666" href="#L1666">1666</a> 
-<a class="jxr_linenumber" name="L1667" href="#L1667">1667</a>             styleChecks.remove(moduleName);
-<a class="jxr_linenumber" name="L1668" href="#L1668">1668</a> 
-<a class="jxr_linenumber" name="L1669" href="#L1669">1669</a>             <strong class="jxr_keyword">for</strong> (String configName : <strong class="jxr_keyword">new</strong> String[] {<span class="jxr_string">"config"</span>, <span class="jxr_string">"test"</span>}) {
-<a class="jxr_linenumber" name="L1670" href="#L1670">1670</a>                 Node config = <strong class="jxr_keyword">null</strong>;
+<a class="jxr_linenumber" name="L1656" href="#L1656">1656</a>             <strong class="jxr_keyword">final</strong> String href = module.getAttributes().getNamedItem(<span class="jxr_string">"href"</span>).getTextContent();
+<a class="jxr_linenumber" name="L1657" href="#L1657">1657</a>             <em class="jxr_comment">// until https://github.com/checkstyle/checkstyle/issues/13132</em>
+<a class="jxr_linenumber" name="L1658" href="#L1658">1658</a>             <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> moduleIsConfig = href.startsWith(<span class="jxr_string">"config_"</span>);
+<a class="jxr_linenumber" name="L1659" href="#L1659">1659</a>             <strong class="jxr_keyword">final</strong> <strong class="jxr_keyword">boolean</strong> moduleIsCheck = href.startsWith(<span class="jxr_string">"checks/"</span>);
+<a class="jxr_linenumber" name="L1660" href="#L1660">1660</a> 
+<a class="jxr_linenumber" name="L1661" href="#L1661">1661</a>             <strong class="jxr_keyword">if</strong> (!moduleIsConfig &amp;&amp; !moduleIsCheck) {
+<a class="jxr_linenumber" name="L1662" href="#L1662">1662</a>                 <strong class="jxr_keyword">continue</strong>;
+<a class="jxr_linenumber" name="L1663" href="#L1663">1663</a>             }
+<a class="jxr_linenumber" name="L1664" href="#L1664">1664</a> 
+<a class="jxr_linenumber" name="L1665" href="#L1665">1665</a>             assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span> + moduleName
+<a class="jxr_linenumber" name="L1666" href="#L1666">1666</a>                         + <span class="jxr_string">"' shouldn't end with 'Check'"</span>)
+<a class="jxr_linenumber" name="L1667" href="#L1667">1667</a>                     .that(moduleName.endsWith(<span class="jxr_string">"Check"</span>))
+<a class="jxr_linenumber" name="L1668" href="#L1668">1668</a>                     .isFalse();
+<a class="jxr_linenumber" name="L1669" href="#L1669">1669</a> 
+<a class="jxr_linenumber" name="L1670" href="#L1670">1670</a>             styleChecks.remove(moduleName);
 <a class="jxr_linenumber" name="L1671" href="#L1671">1671</a> 
-<a class="jxr_linenumber" name="L1672" href="#L1672">1672</a>                 <strong class="jxr_keyword">try</strong> {
-<a class="jxr_linenumber" name="L1673" href="#L1673">1673</a>                     config = itrConfigs.next();
-<a class="jxr_linenumber" name="L1674" href="#L1674">1674</a>                 }
-<a class="jxr_linenumber" name="L1675" href="#L1675">1675</a>                 <strong class="jxr_keyword">catch</strong> (NoSuchElementException ignore) {
-<a class="jxr_linenumber" name="L1676" href="#L1676">1676</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
-<a class="jxr_linenumber" name="L1677" href="#L1677">1677</a>                             + moduleName + <span class="jxr_string">"' is missing the config link: "</span> + configName).fail();
-<a class="jxr_linenumber" name="L1678" href="#L1678">1678</a>                 }
-<a class="jxr_linenumber" name="L1679" href="#L1679">1679</a> 
-<a class="jxr_linenumber" name="L1680" href="#L1680">1680</a>                 assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
-<a class="jxr_linenumber" name="L1681" href="#L1681">1681</a>                                 + moduleName + <span class="jxr_string">"' has mismatched config/test links"</span>)
-<a class="jxr_linenumber" name="L1682" href="#L1682">1682</a>                     .that(config.getTextContent().trim())
-<a class="jxr_linenumber" name="L1683" href="#L1683">1683</a>                     .isEqualTo(configName);
-<a class="jxr_linenumber" name="L1684" href="#L1684">1684</a> 
-<a class="jxr_linenumber" name="L1685" href="#L1685">1685</a>                 <strong class="jxr_keyword">final</strong> String configUrl = config.getAttributes().getNamedItem(<span class="jxr_string">"href"</span>)
-<a class="jxr_linenumber" name="L1686" href="#L1686">1686</a>                         .getTextContent();
+<a class="jxr_linenumber" name="L1672" href="#L1672">1672</a>             <strong class="jxr_keyword">for</strong> (String configName : <strong class="jxr_keyword">new</strong> String[] {<span class="jxr_string">"config"</span>, <span class="jxr_string">"test"</span>}) {
+<a class="jxr_linenumber" name="L1673" href="#L1673">1673</a>                 Node config = <strong class="jxr_keyword">null</strong>;
+<a class="jxr_linenumber" name="L1674" href="#L1674">1674</a> 
+<a class="jxr_linenumber" name="L1675" href="#L1675">1675</a>                 <strong class="jxr_keyword">try</strong> {
+<a class="jxr_linenumber" name="L1676" href="#L1676">1676</a>                     config = itrConfigs.next();
+<a class="jxr_linenumber" name="L1677" href="#L1677">1677</a>                 }
+<a class="jxr_linenumber" name="L1678" href="#L1678">1678</a>                 <strong class="jxr_keyword">catch</strong> (NoSuchElementException ignore) {
+<a class="jxr_linenumber" name="L1679" href="#L1679">1679</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
+<a class="jxr_linenumber" name="L1680" href="#L1680">1680</a>                             + moduleName + <span class="jxr_string">"' is missing the config link: "</span> + configName).fail();
+<a class="jxr_linenumber" name="L1681" href="#L1681">1681</a>                 }
+<a class="jxr_linenumber" name="L1682" href="#L1682">1682</a> 
+<a class="jxr_linenumber" name="L1683" href="#L1683">1683</a>                 assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
+<a class="jxr_linenumber" name="L1684" href="#L1684">1684</a>                                 + moduleName + <span class="jxr_string">"' has mismatched config/test links"</span>)
+<a class="jxr_linenumber" name="L1685" href="#L1685">1685</a>                     .that(config.getTextContent().trim())
+<a class="jxr_linenumber" name="L1686" href="#L1686">1686</a>                     .isEqualTo(configName);
 <a class="jxr_linenumber" name="L1687" href="#L1687">1687</a> 
-<a class="jxr_linenumber" name="L1688" href="#L1688">1688</a>                 <strong class="jxr_keyword">if</strong> (<span class="jxr_string">"config"</span>.equals(configName)) {
-<a class="jxr_linenumber" name="L1689" href="#L1689">1689</a>                     <strong class="jxr_keyword">final</strong> String expectedUrl = <span class="jxr_string">"https://github.com/search?q="</span>
-<a class="jxr_linenumber" name="L1690" href="#L1690">1690</a>                             + <span class="jxr_string">"path%3Asrc%2Fmain%2Fresources%20path%3A**%2F"</span> + styleName
-<a class="jxr_linenumber" name="L1691" href="#L1691">1691</a>                             + <span class="jxr_string">"_checks.xml+repo%3Acheckstyle%2Fcheckstyle+"</span> + moduleName;
-<a class="jxr_linenumber" name="L1692" href="#L1692">1692</a> 
-<a class="jxr_linenumber" name="L1693" href="#L1693">1693</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
-<a class="jxr_linenumber" name="L1694" href="#L1694">1694</a>                                     + moduleName + <span class="jxr_string">"' should have matching "</span> + configName + <span class="jxr_string">" url"</span>)
-<a class="jxr_linenumber" name="L1695" href="#L1695">1695</a>                         .that(configUrl)
-<a class="jxr_linenumber" name="L1696" href="#L1696">1696</a>                         .isEqualTo(expectedUrl);
-<a class="jxr_linenumber" name="L1697" href="#L1697">1697</a>                 }
-<a class="jxr_linenumber" name="L1698" href="#L1698">1698</a>                 <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (<span class="jxr_string">"test"</span>.equals(configName)) {
-<a class="jxr_linenumber" name="L1699" href="#L1699">1699</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
-<a class="jxr_linenumber" name="L1700" href="#L1700">1700</a>                                 + moduleName + <span class="jxr_string">"' should have matching "</span> + configName + <span class="jxr_string">" url"</span>)
-<a class="jxr_linenumber" name="L1701" href="#L1701">1701</a>                             .that(configUrl)
-<a class="jxr_linenumber" name="L1702" href="#L1702">1702</a>                             .startsWith(<span class="jxr_string">"https://github.com/checkstyle/checkstyle/"</span>
-<a class="jxr_linenumber" name="L1703" href="#L1703">1703</a>                                     + <span class="jxr_string">"blob/master/src/it/java/com/"</span> + styleName
-<a class="jxr_linenumber" name="L1704" href="#L1704">1704</a>                                     + <span class="jxr_string">"/checkstyle/test/"</span>);
-<a class="jxr_linenumber" name="L1705" href="#L1705">1705</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
-<a class="jxr_linenumber" name="L1706" href="#L1706">1706</a>                                 + moduleName + <span class="jxr_string">"' should have matching "</span> + configName + <span class="jxr_string">" url"</span>)
-<a class="jxr_linenumber" name="L1707" href="#L1707">1707</a>                             .that(configUrl)
-<a class="jxr_linenumber" name="L1708" href="#L1708">1708</a>                             .endsWith(<span class="jxr_string">"/"</span> + moduleName + <span class="jxr_string">"Test.java"</span>);
-<a class="jxr_linenumber" name="L1709" href="#L1709">1709</a> 
-<a class="jxr_linenumber" name="L1710" href="#L1710">1710</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
-<a class="jxr_linenumber" name="L1711" href="#L1711">1711</a>                                 + moduleName + <span class="jxr_string">"' should have a test that exists"</span>)
-<a class="jxr_linenumber" name="L1712" href="#L1712">1712</a>                             .that(<strong class="jxr_keyword">new</strong> File(configUrl.substring(53).replace('/',
-<a class="jxr_linenumber" name="L1713" href="#L1713">1713</a>                                             File.separatorChar)).exists())
-<a class="jxr_linenumber" name="L1714" href="#L1714">1714</a>                             .isTrue();
-<a class="jxr_linenumber" name="L1715" href="#L1715">1715</a>                 }
-<a class="jxr_linenumber" name="L1716" href="#L1716">1716</a>             }
-<a class="jxr_linenumber" name="L1717" href="#L1717">1717</a>         }
-<a class="jxr_linenumber" name="L1718" href="#L1718">1718</a> 
-<a class="jxr_linenumber" name="L1719" href="#L1719">1719</a>         assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' has too many configs"</span>)
-<a class="jxr_linenumber" name="L1720" href="#L1720">1720</a>                 .that(itrConfigs.hasNext())
-<a class="jxr_linenumber" name="L1721" href="#L1721">1721</a>                 .isFalse();
-<a class="jxr_linenumber" name="L1722" href="#L1722">1722</a>     }
-<a class="jxr_linenumber" name="L1723" href="#L1723">1723</a> 
-<a class="jxr_linenumber" name="L1724" href="#L1724">1724</a> }
+<a class="jxr_linenumber" name="L1688" href="#L1688">1688</a>                 <strong class="jxr_keyword">final</strong> String configUrl = config.getAttributes().getNamedItem(<span class="jxr_string">"href"</span>)
+<a class="jxr_linenumber" name="L1689" href="#L1689">1689</a>                         .getTextContent();
+<a class="jxr_linenumber" name="L1690" href="#L1690">1690</a> 
+<a class="jxr_linenumber" name="L1691" href="#L1691">1691</a>                 <strong class="jxr_keyword">if</strong> (<span class="jxr_string">"config"</span>.equals(configName)) {
+<a class="jxr_linenumber" name="L1692" href="#L1692">1692</a>                     <strong class="jxr_keyword">final</strong> String expectedUrl = <span class="jxr_string">"https://github.com/search?q="</span>
+<a class="jxr_linenumber" name="L1693" href="#L1693">1693</a>                             + <span class="jxr_string">"path%3Asrc%2Fmain%2Fresources%20path%3A**%2F"</span> + styleName
+<a class="jxr_linenumber" name="L1694" href="#L1694">1694</a>                             + <span class="jxr_string">"_checks.xml+repo%3Acheckstyle%2Fcheckstyle+"</span> + moduleName;
+<a class="jxr_linenumber" name="L1695" href="#L1695">1695</a> 
+<a class="jxr_linenumber" name="L1696" href="#L1696">1696</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
+<a class="jxr_linenumber" name="L1697" href="#L1697">1697</a>                                     + moduleName + <span class="jxr_string">"' should have matching "</span> + configName + <span class="jxr_string">" url"</span>)
+<a class="jxr_linenumber" name="L1698" href="#L1698">1698</a>                         .that(configUrl)
+<a class="jxr_linenumber" name="L1699" href="#L1699">1699</a>                         .isEqualTo(expectedUrl);
+<a class="jxr_linenumber" name="L1700" href="#L1700">1700</a>                 }
+<a class="jxr_linenumber" name="L1701" href="#L1701">1701</a>                 <strong class="jxr_keyword">else</strong> <strong class="jxr_keyword">if</strong> (<span class="jxr_string">"test"</span>.equals(configName)) {
+<a class="jxr_linenumber" name="L1702" href="#L1702">1702</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
+<a class="jxr_linenumber" name="L1703" href="#L1703">1703</a>                                 + moduleName + <span class="jxr_string">"' should have matching "</span> + configName + <span class="jxr_string">" url"</span>)
+<a class="jxr_linenumber" name="L1704" href="#L1704">1704</a>                             .that(configUrl)
+<a class="jxr_linenumber" name="L1705" href="#L1705">1705</a>                             .startsWith(<span class="jxr_string">"https://github.com/checkstyle/checkstyle/"</span>
+<a class="jxr_linenumber" name="L1706" href="#L1706">1706</a>                                     + <span class="jxr_string">"blob/master/src/it/java/com/"</span> + styleName
+<a class="jxr_linenumber" name="L1707" href="#L1707">1707</a>                                     + <span class="jxr_string">"/checkstyle/test/"</span>);
+<a class="jxr_linenumber" name="L1708" href="#L1708">1708</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
+<a class="jxr_linenumber" name="L1709" href="#L1709">1709</a>                                 + moduleName + <span class="jxr_string">"' should have matching "</span> + configName + <span class="jxr_string">" url"</span>)
+<a class="jxr_linenumber" name="L1710" href="#L1710">1710</a>                             .that(configUrl)
+<a class="jxr_linenumber" name="L1711" href="#L1711">1711</a>                             .endsWith(<span class="jxr_string">"/"</span> + moduleName + <span class="jxr_string">"Test.java"</span>);
+<a class="jxr_linenumber" name="L1712" href="#L1712">1712</a> 
+<a class="jxr_linenumber" name="L1713" href="#L1713">1713</a>                     assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' module '"</span>
+<a class="jxr_linenumber" name="L1714" href="#L1714">1714</a>                                 + moduleName + <span class="jxr_string">"' should have a test that exists"</span>)
+<a class="jxr_linenumber" name="L1715" href="#L1715">1715</a>                             .that(<strong class="jxr_keyword">new</strong> File(configUrl.substring(53).replace('/',
+<a class="jxr_linenumber" name="L1716" href="#L1716">1716</a>                                             File.separatorChar)).exists())
+<a class="jxr_linenumber" name="L1717" href="#L1717">1717</a>                             .isTrue();
+<a class="jxr_linenumber" name="L1718" href="#L1718">1718</a>                 }
+<a class="jxr_linenumber" name="L1719" href="#L1719">1719</a>             }
+<a class="jxr_linenumber" name="L1720" href="#L1720">1720</a>         }
+<a class="jxr_linenumber" name="L1721" href="#L1721">1721</a> 
+<a class="jxr_linenumber" name="L1722" href="#L1722">1722</a>         assertWithMessage(styleName + <span class="jxr_string">"_style.xml rule '"</span> + ruleName + <span class="jxr_string">"' has too many configs"</span>)
+<a class="jxr_linenumber" name="L1723" href="#L1723">1723</a>                 .that(itrConfigs.hasNext())
+<a class="jxr_linenumber" name="L1724" href="#L1724">1724</a>                 .isFalse();
+<a class="jxr_linenumber" name="L1725" href="#L1725">1725</a>     }
+<a class="jxr_linenumber" name="L1726" href="#L1726">1726</a> 
+<a class="jxr_linenumber" name="L1727" href="#L1727">1727</a> }
 </pre>
 <hr/>
 <div id="footer">Copyright &#169; 2001&#x2013;2023. All rights reserved.</div>
