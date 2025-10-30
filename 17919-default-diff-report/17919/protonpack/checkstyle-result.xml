@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="12.1.2-SNAPSHOT">
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/SkipUntilSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/Indexed.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/selectors/Selectors.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/selectors/Selector.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/WindowedSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/PairSeq.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/UnfoldSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/StreamUtils.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.*&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.*&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="17" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="6" column="26" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - java.util.function.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/TriZippingSpliterator.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Spliterator&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Spliterator&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/maps/DefaultMapStream.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/maps/MapStream.java">
+<error line="19" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.stream.Collectors.*&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="19" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.stream.Collectors.*&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="19" column="42" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - java.util.stream.Collectors.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="19" column="42" severity="warning" message="Using a static member import should be avoided - java.util.stream.Collectors.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/Seq.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/EmptySeq.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/GroupRunsSpliterator.java">
+<error line="3" column="17" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/functions/TriFunction.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/TakeWhileSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/TappedSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/Streamable.java">
+<error line="3" column="17" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - java.util.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="4" column="26" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - java.util.function.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/MergingSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/collectors/NonUniqueValueException.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/collectors/CollectorUtils.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/InterleavingSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/ZippingSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/main/java/com/codepoetics/protonpack/AggregatingSpliterator.java">
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/TakeWhileTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.stream.Collectors&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.stream.Collectors&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.stream.Collectors&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="8" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="9" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.hasSize." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/MergeTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.List&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.List&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.List&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays.asList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="8" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays.asList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="31" severity="warning" message="Using a static member import should be avoided - java.util.Arrays.asList." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="9" column="42" severity="warning" message="Using a static member import should be avoided - java.util.stream.Collectors.toList." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/SeqTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="6" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.equalTo." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="7" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.not." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/InterleaveTest.java">
+<error line="6" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Comparator&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="6" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Comparator&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="6" column="1" severity="warning" message="Wrong order for &apos;java.util.Comparator&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="12" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="12" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="12" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="13" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/WindowedTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.ArrayList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.ArrayList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.ArrayList&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays.asList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays.asList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="31" severity="warning" message="Using a static member import should be avoided - java.util.Arrays.asList." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="42" severity="warning" message="Using a static member import should be avoided - java.util.stream.Collectors.maxBy." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="42" severity="warning" message="Using a static member import should be avoided - java.util.stream.Collectors.toList." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="12" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="13" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="14" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.iterableWithSize." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/OptionalTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.Arrays&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="11" column="31" severity="warning" message="Using the &apos;.*&apos; form of import should be avoided - org.junit.Assert.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
+<error line="11" column="31" severity="warning" message="Using a static member import should be avoided - org.junit.Assert.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/AggregateTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.List&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.List&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.List&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays.asList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="8" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays.asList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="31" severity="warning" message="Using a static member import should be avoided - java.util.Arrays.asList." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="9" column="42" severity="warning" message="Using a static member import should be avoided - java.util.stream.Collectors.toList." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="12" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.equalTo." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/StreamableTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.Arrays&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="31" severity="warning" message="Using a static member import should be avoided - org.junit.Assert.assertEquals." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/NoCombinerTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.HashSet&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.HashSet&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.HashSet&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="10" column="1" severity="warning" message="Extra separation in import group before &apos;com.codepoetics.protonpack.collectors.CollectorUtils.noCombiner&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="10" column="1" severity="warning" message="Extra separation in import group before &apos;com.codepoetics.protonpack.collectors.CollectorUtils.noCombiner&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="10" column="67" severity="warning" message="Using a static member import should be avoided - com.codepoetics.protonpack.collectors.CollectorUtils.noCombiner." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="12" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.equalTo." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/MinMaxByProjectionTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Optional&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Optional&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.Optional&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="1" severity="warning" message="Extra separation in import group before &apos;com.codepoetics.protonpack.collectors.CollectorUtils.maxBy&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="8" column="1" severity="warning" message="Extra separation in import group before &apos;com.codepoetics.protonpack.collectors.CollectorUtils.maxBy&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="8" column="67" severity="warning" message="Using a static member import should be avoided - com.codepoetics.protonpack.collectors.CollectorUtils.maxBy." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="9" column="67" severity="warning" message="Using a static member import should be avoided - com.codepoetics.protonpack.collectors.CollectorUtils.minBy." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="40" severity="warning" message="Using a static member import should be avoided - org.hamcrest.CoreMatchers.is." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/UniqueTest.java">
+<error line="7" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Optional&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="7" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Optional&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="7" column="1" severity="warning" message="Wrong order for &apos;java.util.Optional&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="10" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.CoreMatchers.equalTo&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="10" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.CoreMatchers.equalTo&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="10" column="40" severity="warning" message="Using a static member import should be avoided - org.hamcrest.CoreMatchers.equalTo." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/ZipTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.List&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.List&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.List&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/MapStreamTest.java">
+<error line="8" column="31" severity="warning" message="Using a static member import should be avoided - org.junit.Assert.assertEquals." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="9" column="31" severity="warning" message="Using a static member import should be avoided - org.junit.Assert.assertTrue." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="11" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="11" column="1" severity="warning" message="Wrong order for &apos;java.util.Arrays&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="15" column="1" severity="warning" message="Extra separation in import group before &apos;com.codepoetics.protonpack.maps.MapStream&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="15" column="1" severity="warning" message="Extra separation in import group before &apos;com.codepoetics.protonpack.maps.MapStream&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="15" column="1" severity="warning" message="Wrong order for &apos;com.codepoetics.protonpack.maps.MapStream&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/SkipWhileTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.List&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.List&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.List&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/GroupRunsTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.ArrayList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.ArrayList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.ArrayList&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays.asList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Arrays.asList&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="31" severity="warning" message="Using a static member import should be avoided - java.util.Arrays.asList." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="42" severity="warning" message="Using a static member import should be avoided - java.util.stream.Collectors.toList." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="11" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="12" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="13" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.iterableWithSize." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/UnfoldTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Optional&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.Optional&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.Optional&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="9" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.MatcherAssert.assertThat&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="9" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="10" column="36" severity="warning" message="Using a static member import should be avoided - org.hamcrest.Matchers.contains." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+<file name="/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/protonpack/src/test/java/com/codepoetics/protonpack/NullableTest.java">
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.stream.Collectors&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Extra separation in import group before &apos;java.util.stream.Collectors&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="5" column="1" severity="warning" message="Wrong order for &apos;java.util.stream.Collectors&apos; import." source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="7" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.CoreMatchers.equalTo&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.CustomImportOrderCheck"/>
+<error line="7" column="1" severity="warning" message="Extra separation in import group before &apos;org.hamcrest.CoreMatchers.equalTo&apos;" source="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck"/>
+<error line="7" column="40" severity="warning" message="Using a static member import should be avoided - org.hamcrest.CoreMatchers.equalTo." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="8" column="40" severity="warning" message="Using a static member import should be avoided - org.hamcrest.CoreMatchers.hasItems." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+<error line="9" column="41" severity="warning" message="Using a static member import should be avoided - org.hamcrest.MatcherAssert.assertThat." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck"/>
+</file>
+</checkstyle>

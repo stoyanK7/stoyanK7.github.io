@@ -1,0 +1,26 @@
+#Tue Nov 11 11:51:22 EET 2025
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr-match/src/main/java/io/vavr/match/annotation/Patterns.java=1762854672925
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr-match/src/main/java/io/vavr/match/annotation/Unapply.java=1762854672925
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr-match/src/main/java/io/vavr/match/model/ParameterModel.java=1762854672926
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr-test/src/main/java/io/vavr/test/Checkable.java=1762854672930
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr-test/src/main/java/io/vavr/test/package-info.java=1762854672930
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src-gen/main/java/io/vavr/Tuple.java=1762854672935
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/CheckedConsumer.java=1762854672938
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/CheckedPredicate.java=1762854672939
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/CheckedRunnable.java=1762854672939
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/Lambda.java=1762854672939
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/MatchError.java=1762854672939
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/NotImplementedError.java=1762854672939
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/PartialFunction.java=1762854672939
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/collection/AbstractIterator.java=1762854672939
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/collection/Comparators.java=1762854672941
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/collection/Ordered.java=1762854672944
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/collection/package-info.java=1762854672947
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/concurrent/package-info.java=1762854672948
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/control/package-info.java=1762854672949
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/main/java/io/vavr/package-info.java=1762854672949
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/test/java/io/vavr/collection/AbstractTraversableRangeTest.java=1762854672951
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/test/java/io/vavr/collection/IntMod2.java=1762854672953
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/test/java/io/vavr/collection/euler/PrimeNumbers.java=1762854672960
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/Vavr/vavr/src/test/java/io/vavr/collection/euler/Sieve.java=1762854672960
+configuration*?=AC5BBCA6C335A3D6B454480CF213CD7117F19972

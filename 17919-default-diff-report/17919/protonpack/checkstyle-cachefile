@@ -1,0 +1,21 @@
+#Tue Nov 11 12:03:18 EET 2025
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/AggregatingSpliterator.java=1762855394328
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/EmptySeq.java=1762855394328
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/Indexed.java=1762855394328
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/InterleavingSpliterator.java=1762855394328
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/MergingSpliterator.java=1762855394328
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/PairSeq.java=1762855394328
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/Seq.java=1762855394328
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/SkipUntilSpliterator.java=1762855394328
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/TakeWhileSpliterator.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/TappedSpliterator.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/UnfoldSpliterator.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/WindowedSpliterator.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/ZippingSpliterator.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/collectors/CollectorUtils.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/collectors/NonUniqueValueException.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/functions/TriFunction.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/maps/DefaultMapStream.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/selectors/Selector.java=1762855394329
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/protonpack/src/main/java/com/codepoetics/protonpack/selectors/Selectors.java=1762855394329
+configuration*?=AC5BBCA6C335A3D6B454480CF213CD7117F19972

@@ -1,0 +1,12 @@
+#Tue Nov 11 11:39:33 EET 2025
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/src/it/resources/integration-test-project/src/main/java/com/acme/App.java=1762853968389
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/src/main/java/org/sonar/plugins/checkstyle/CheckstyleConstants.java=1762853968390
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/src/main/java/org/sonar/plugins/checkstyle/CheckstyleRulesDefinition.java=1762853968391
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/src/main/java/org/sonar/plugins/checkstyle/CheckstyleSensor.java=1762853968391
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/src/main/java/org/sonar/plugins/checkstyle/CheckstyleSeverityUtils.java=1762853968391
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/src/main/java/org/sonar/plugins/checkstyle/metadata/SonarRulePropertyLoader.java=1762853968392
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/src/main/java/org/sonar/plugins/checkstyle/metadata/package-info.java=1762853968392
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/src/main/java/org/sonar/plugins/checkstyle/package-info.java=1762853968392
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/test-resources/Hello.java=1762853968399
+/home/stoyan/Documents/github/contribution/checkstyle-tester/src/main/java/checkstyle-sonar/test-resources/World.java=1762853968399
+configuration*?=AC5BBCA6C335A3D6B454480CF213CD7117F19972

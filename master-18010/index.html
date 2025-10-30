@@ -1,0 +1,2297 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkstyle Website Rendered HTML Diff Report</title>
+    <style>
+        :root {
+            --border: #e5e7eb;
+            --bg: #ffffff;
+            --bg-alt: #fafafa;
+            --bg-hover: #f3f4f6;
+            --head-bg: #f8fafc;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.4;
+            color: #0f172a;
+            background: #fff;
+            padding: 1rem;
+        }
+
+        .table-wrap {
+            max-width: 100%;
+        }
+
+        table {
+            width: fit-content;
+            max-width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        th,
+        td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid var(--border);
+            white-space: normal;
+            word-break: break-word;
+            overflow-wrap: anywhere;
+        }
+
+        thead th, tfoot th {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: var(--head-bg);
+            text-align: left;
+            font-weight: 600;
+        }
+
+        tfoot th {
+            top: auto;
+            bottom: 0;
+            border-top: 2px solid var(--border);
+        }
+
+        .path {
+            white-space: normal;
+            word-break: break-word;
+            min-width: 10ch;
+        }
+
+        .number {
+            white-space: nowrap;
+        }
+
+        .number {
+            text-align: right;
+            white-space: nowrap;
+            font-variant-numeric: tabular-nums;
+        }
+
+        tbody tr:nth-child(odd) td {
+            background-color: var(--bg-alt);
+        }
+
+        tbody tr:hover td {
+            background-color: var(--bg-hover);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        td.green {
+            background-color: #8bffb6 !important;
+        }
+
+        td.red {
+            background-color: #e76565 !important;
+        }
+
+        td.gray {
+            background-color: #cccccc !important;
+        }
+
+        span.branch {
+            background-color: #d4d4d4;
+            padding: 0 2px;
+        }
+
+        @media (max-width: 700px) {
+
+            th,
+            td {
+                padding: 0.45rem 0.6rem;
+            }
+
+            body {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Checkstyle Rendered Site Diff Report</h1>
+    <h2>Comparison between branches <span class="branch">master</span> and <span class="branch">18010</span></h2>
+    <p><small>Note: “Rendered Site” refers to the HTML after executing JavaScript.</small></p>
+    <p>Some remarks:</p>
+    <ul>
+        <li>
+            <small>Only HTML files are compared</small>
+        </li>
+        <li>
+            <small>Files with no diff are not in the table</small>
+        </li>
+        <li>
+            <small>Each <i>Webpage</i> on the table is a link to a diff</small>
+        </li>
+    </ul>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th class="path">Webpage</th>
+                    <th class="number">Lines<br>added</th>
+                    <th class="number">Lines<br>removed</th>
+                    <th class="number">Lines<br>diff</th>
+                    <th class="number">Characters<br>added</th>
+                    <th class="number">Characters<br>removed</th>
+                    <th class="number">Characters<br>diff</th>
+                </tr>
+            </thead>
+            <tbody>
+                        <tr>
+            <td class="path"><a href="./diff2html/anttask.html">anttask.html</a></td>
+            <td class="number">59</td>
+            <td class="number">-59</td>
+            <td class="gray number">0</td>
+            <td class="number">11503</td>
+            <td class="number">-19453</td>
+            <td class="red number">-7950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/beginning_development.html">beginning_development.html</a></td>
+            <td class="number">16</td>
+            <td class="number">-16</td>
+            <td class="gray number">0</td>
+            <td class="number">3277</td>
+            <td class="number">-5002</td>
+            <td class="red number">-1725</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/annotation/annotationlocation.html">checks/annotation/annotationlocation.html</a></td>
+            <td class="number">102</td>
+            <td class="number">-102</td>
+            <td class="gray number">0</td>
+            <td class="number">22182</td>
+            <td class="number">-39632</td>
+            <td class="red number">-17450</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/annotation/annotationonsameline.html">checks/annotation/annotationonsameline.html</a></td>
+            <td class="number">52</td>
+            <td class="number">-52</td>
+            <td class="gray number">0</td>
+            <td class="number">7989</td>
+            <td class="number">-14214</td>
+            <td class="red number">-6225</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/annotation/annotationusestyle.html">checks/annotation/annotationusestyle.html</a></td>
+            <td class="number">86</td>
+            <td class="number">-86</td>
+            <td class="gray number">0</td>
+            <td class="number">15390</td>
+            <td class="number">-26815</td>
+            <td class="red number">-11425</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/annotation/missingdeprecated.html">checks/annotation/missingdeprecated.html</a></td>
+            <td class="number">49</td>
+            <td class="number">-49</td>
+            <td class="gray number">0</td>
+            <td class="number">8314</td>
+            <td class="number">-14789</td>
+            <td class="red number">-6475</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/annotation/missingoverride.html">checks/annotation/missingoverride.html</a></td>
+            <td class="number">57</td>
+            <td class="number">-57</td>
+            <td class="gray number">0</td>
+            <td class="number">8218</td>
+            <td class="number">-14618</td>
+            <td class="red number">-6400</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/annotation/packageannotation.html">checks/annotation/packageannotation.html</a></td>
+            <td class="number">13</td>
+            <td class="number">-13</td>
+            <td class="gray number">0</td>
+            <td class="number">3269</td>
+            <td class="number">-5644</td>
+            <td class="red number">-2375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/annotation/suppresswarnings.html">checks/annotation/suppresswarnings.html</a></td>
+            <td class="number">64</td>
+            <td class="number">-64</td>
+            <td class="gray number">0</td>
+            <td class="number">11319</td>
+            <td class="number">-20069</td>
+            <td class="red number">-8750</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/annotation/suppresswarningsholder.html">checks/annotation/suppresswarningsholder.html</a></td>
+            <td class="number">93</td>
+            <td class="number">-93</td>
+            <td class="gray number">0</td>
+            <td class="number">21045</td>
+            <td class="number">-38120</td>
+            <td class="red number">-17075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/blocks/avoidnestedblocks.html">checks/blocks/avoidnestedblocks.html</a></td>
+            <td class="number">60</td>
+            <td class="number">-60</td>
+            <td class="gray number">0</td>
+            <td class="number">9830</td>
+            <td class="number">-17730</td>
+            <td class="red number">-7900</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/blocks/emptyblock.html">checks/blocks/emptyblock.html</a></td>
+            <td class="number">80</td>
+            <td class="number">-80</td>
+            <td class="gray number">0</td>
+            <td class="number">15523</td>
+            <td class="number">-28248</td>
+            <td class="red number">-12725</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/blocks/emptycatchblock.html">checks/blocks/emptycatchblock.html</a></td>
+            <td class="number">171</td>
+            <td class="number">-171</td>
+            <td class="gray number">0</td>
+            <td class="number">27955</td>
+            <td class="number">-50830</td>
+            <td class="red number">-22875</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/blocks/leftcurly.html">checks/blocks/leftcurly.html</a></td>
+            <td class="number">83</td>
+            <td class="number">-83</td>
+            <td class="gray number">0</td>
+            <td class="number">11061</td>
+            <td class="number">-19486</td>
+            <td class="red number">-8425</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/blocks/needbraces.html">checks/blocks/needbraces.html</a></td>
+            <td class="number">255</td>
+            <td class="number">-255</td>
+            <td class="gray number">0</td>
+            <td class="number">52948</td>
+            <td class="number">-96373</td>
+            <td class="red number">-43425</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/blocks/rightcurly.html">checks/blocks/rightcurly.html</a></td>
+            <td class="number">196</td>
+            <td class="number">-196</td>
+            <td class="gray number">0</td>
+            <td class="number">29761</td>
+            <td class="number">-54286</td>
+            <td class="red number">-24525</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/arraytrailingcomma.html">checks/coding/arraytrailingcomma.html</a></td>
+            <td class="number">96</td>
+            <td class="number">-96</td>
+            <td class="gray number">0</td>
+            <td class="number">16224</td>
+            <td class="number">-29399</td>
+            <td class="red number">-13175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/avoiddoublebraceinitialization.html">checks/coding/avoiddoublebraceinitialization.html</a></td>
+            <td class="number">28</td>
+            <td class="number">-28</td>
+            <td class="gray number">0</td>
+            <td class="number">3920</td>
+            <td class="number">-6995</td>
+            <td class="red number">-3075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/avoidinlineconditionals.html">checks/coding/avoidinlineconditionals.html</a></td>
+            <td class="number">24</td>
+            <td class="number">-24</td>
+            <td class="gray number">0</td>
+            <td class="number">6269</td>
+            <td class="number">-11544</td>
+            <td class="red number">-5275</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/avoidnoargumentsuperconstructorcall.html">checks/coding/avoidnoargumentsuperconstructorcall.html</a></td>
+            <td class="number">21</td>
+            <td class="number">-21</td>
+            <td class="gray number">0</td>
+            <td class="number">3305</td>
+            <td class="number">-5880</td>
+            <td class="red number">-2575</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/constructorsdeclarationgrouping.html">checks/coding/constructorsdeclarationgrouping.html</a></td>
+            <td class="number">39</td>
+            <td class="number">-39</td>
+            <td class="gray number">0</td>
+            <td class="number">7537</td>
+            <td class="number">-13762</td>
+            <td class="red number">-6225</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/covariantequals.html">checks/coding/covariantequals.html</a></td>
+            <td class="number">32</td>
+            <td class="number">-32</td>
+            <td class="gray number">0</td>
+            <td class="number">5941</td>
+            <td class="number">-10766</td>
+            <td class="red number">-4825</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/declarationorder.html">checks/coding/declarationorder.html</a></td>
+            <td class="number">69</td>
+            <td class="number">-69</td>
+            <td class="gray number">0</td>
+            <td class="number">12406</td>
+            <td class="number">-22206</td>
+            <td class="red number">-9800</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/defaultcomeslast.html">checks/coding/defaultcomeslast.html</a></td>
+            <td class="number">90</td>
+            <td class="number">-90</td>
+            <td class="gray number">0</td>
+            <td class="number">13207</td>
+            <td class="number">-24332</td>
+            <td class="red number">-11125</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/emptystatement.html">checks/coding/emptystatement.html</a></td>
+            <td class="number">16</td>
+            <td class="number">-16</td>
+            <td class="gray number">0</td>
+            <td class="number">2917</td>
+            <td class="number">-5292</td>
+            <td class="red number">-2375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/equalsavoidnull.html">checks/coding/equalsavoidnull.html</a></td>
+            <td class="number">33</td>
+            <td class="number">-33</td>
+            <td class="gray number">0</td>
+            <td class="number">5863</td>
+            <td class="number">-10238</td>
+            <td class="red number">-4375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/equalshashcode.html">checks/coding/equalshashcode.html</a></td>
+            <td class="number">42</td>
+            <td class="number">-42</td>
+            <td class="gray number">0</td>
+            <td class="number">9292</td>
+            <td class="number">-17267</td>
+            <td class="red number">-7975</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/explicitinitialization.html">checks/coding/explicitinitialization.html</a></td>
+            <td class="number">46</td>
+            <td class="number">-46</td>
+            <td class="gray number">0</td>
+            <td class="number">10941</td>
+            <td class="number">-20016</td>
+            <td class="red number">-9075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/fallthrough.html">checks/coding/fallthrough.html</a></td>
+            <td class="number">104</td>
+            <td class="number">-104</td>
+            <td class="gray number">0</td>
+            <td class="number">15168</td>
+            <td class="number">-27443</td>
+            <td class="red number">-12275</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/finallocalvariable.html">checks/coding/finallocalvariable.html</a></td>
+            <td class="number">92</td>
+            <td class="number">-92</td>
+            <td class="gray number">0</td>
+            <td class="number">16675</td>
+            <td class="number">-29700</td>
+            <td class="red number">-13025</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/hiddenfield.html">checks/coding/hiddenfield.html</a></td>
+            <td class="number">187</td>
+            <td class="number">-187</td>
+            <td class="gray number">0</td>
+            <td class="number">36090</td>
+            <td class="number">-64990</td>
+            <td class="red number">-28900</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/illegalcatch.html">checks/coding/illegalcatch.html</a></td>
+            <td class="number">87</td>
+            <td class="number">-87</td>
+            <td class="gray number">0</td>
+            <td class="number">12570</td>
+            <td class="number">-22770</td>
+            <td class="red number">-10200</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/illegalinstantiation.html">checks/coding/illegalinstantiation.html</a></td>
+            <td class="number">71</td>
+            <td class="number">-71</td>
+            <td class="gray number">0</td>
+            <td class="number">16949</td>
+            <td class="number">-31199</td>
+            <td class="red number">-14250</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/illegalthrows.html">checks/coding/illegalthrows.html</a></td>
+            <td class="number">77</td>
+            <td class="number">-77</td>
+            <td class="gray number">0</td>
+            <td class="number">15912</td>
+            <td class="number">-28587</td>
+            <td class="red number">-12675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/illegaltoken.html">checks/coding/illegaltoken.html</a></td>
+            <td class="number">25</td>
+            <td class="number">-25</td>
+            <td class="gray number">0</td>
+            <td class="number">4477</td>
+            <td class="number">-7952</td>
+            <td class="red number">-3475</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/illegaltokentext.html">checks/coding/illegaltokentext.html</a></td>
+            <td class="number">62</td>
+            <td class="number">-62</td>
+            <td class="gray number">0</td>
+            <td class="number">12402</td>
+            <td class="number">-22252</td>
+            <td class="red number">-9850</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/illegaltype.html">checks/coding/illegaltype.html</a></td>
+            <td class="number">463</td>
+            <td class="number">-463</td>
+            <td class="gray number">0</td>
+            <td class="number">99947</td>
+            <td class="number">-182597</td>
+            <td class="red number">-82650</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/innerassignment.html">checks/coding/innerassignment.html</a></td>
+            <td class="number">81</td>
+            <td class="number">-81</td>
+            <td class="gray number">0</td>
+            <td class="number">16321</td>
+            <td class="number">-30071</td>
+            <td class="red number">-13750</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/magicnumber.html">checks/coding/magicnumber.html</a></td>
+            <td class="number">264</td>
+            <td class="number">-264</td>
+            <td class="gray number">0</td>
+            <td class="number">60304</td>
+            <td class="number">-112154</td>
+            <td class="red number">-51850</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/matchxpath.html">checks/coding/matchxpath.html</a></td>
+            <td class="number">127</td>
+            <td class="number">-127</td>
+            <td class="gray number">0</td>
+            <td class="number">29963</td>
+            <td class="number">-54363</td>
+            <td class="red number">-24400</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/missingctor.html">checks/coding/missingctor.html</a></td>
+            <td class="number">23</td>
+            <td class="number">-23</td>
+            <td class="gray number">0</td>
+            <td class="number">3646</td>
+            <td class="number">-6646</td>
+            <td class="red number">-3000</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/missingnullcaseinswitch.html">checks/coding/missingnullcaseinswitch.html</a></td>
+            <td class="number">46</td>
+            <td class="number">-46</td>
+            <td class="gray number">0</td>
+            <td class="number">7413</td>
+            <td class="number">-13463</td>
+            <td class="red number">-6050</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/missingswitchdefault.html">checks/coding/missingswitchdefault.html</a></td>
+            <td class="number">99</td>
+            <td class="number">-99</td>
+            <td class="gray number">0</td>
+            <td class="number">16071</td>
+            <td class="number">-29646</td>
+            <td class="red number">-13575</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/modifiedcontrolvariable.html">checks/coding/modifiedcontrolvariable.html</a></td>
+            <td class="number">43</td>
+            <td class="number">-43</td>
+            <td class="gray number">0</td>
+            <td class="number">8748</td>
+            <td class="number">-15798</td>
+            <td class="red number">-7050</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/multiplestringliterals.html">checks/coding/multiplestringliterals.html</a></td>
+            <td class="number">71</td>
+            <td class="number">-71</td>
+            <td class="gray number">0</td>
+            <td class="number">15564</td>
+            <td class="number">-27739</td>
+            <td class="red number">-12175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/multiplevariabledeclarations.html">checks/coding/multiplevariabledeclarations.html</a></td>
+            <td class="number">17</td>
+            <td class="number">-17</td>
+            <td class="gray number">0</td>
+            <td class="number">2912</td>
+            <td class="number">-5087</td>
+            <td class="red number">-2175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/nestedfordepth.html">checks/coding/nestedfordepth.html</a></td>
+            <td class="number">60</td>
+            <td class="number">-60</td>
+            <td class="gray number">0</td>
+            <td class="number">12715</td>
+            <td class="number">-23590</td>
+            <td class="red number">-10875</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/nestedifdepth.html">checks/coding/nestedifdepth.html</a></td>
+            <td class="number">80</td>
+            <td class="number">-80</td>
+            <td class="gray number">0</td>
+            <td class="number">12894</td>
+            <td class="number">-23619</td>
+            <td class="red number">-10725</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/nestedtrydepth.html">checks/coding/nestedtrydepth.html</a></td>
+            <td class="number">60</td>
+            <td class="number">-60</td>
+            <td class="gray number">0</td>
+            <td class="number">12716</td>
+            <td class="number">-23191</td>
+            <td class="red number">-10475</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/noarraytrailingcomma.html">checks/coding/noarraytrailingcomma.html</a></td>
+            <td class="number">28</td>
+            <td class="number">-28</td>
+            <td class="gray number">0</td>
+            <td class="number">4625</td>
+            <td class="number">-8300</td>
+            <td class="red number">-3675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/noclone.html">checks/coding/noclone.html</a></td>
+            <td class="number">16</td>
+            <td class="number">-16</td>
+            <td class="gray number">0</td>
+            <td class="number">5011</td>
+            <td class="number">-8961</td>
+            <td class="red number">-3950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/noenumtrailingcomma.html">checks/coding/noenumtrailingcomma.html</a></td>
+            <td class="number">42</td>
+            <td class="number">-42</td>
+            <td class="gray number">0</td>
+            <td class="number">5831</td>
+            <td class="number">-10506</td>
+            <td class="red number">-4675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/nofinalizer.html">checks/coding/nofinalizer.html</a></td>
+            <td class="number">17</td>
+            <td class="number">-17</td>
+            <td class="gray number">0</td>
+            <td class="number">2888</td>
+            <td class="number">-5188</td>
+            <td class="red number">-2300</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/onestatementperline.html">checks/coding/onestatementperline.html</a></td>
+            <td class="number">73</td>
+            <td class="number">-73</td>
+            <td class="gray number">0</td>
+            <td class="number">17464</td>
+            <td class="number">-31939</td>
+            <td class="red number">-14475</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/overloadmethodsdeclarationorder.html">checks/coding/overloadmethodsdeclarationorder.html</a></td>
+            <td class="number">18</td>
+            <td class="number">-18</td>
+            <td class="gray number">0</td>
+            <td class="number">3644</td>
+            <td class="number">-6569</td>
+            <td class="red number">-2925</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/packagedeclaration.html">checks/coding/packagedeclaration.html</a></td>
+            <td class="number">19</td>
+            <td class="number">-19</td>
+            <td class="gray number">0</td>
+            <td class="number">3546</td>
+            <td class="number">-6171</td>
+            <td class="red number">-2625</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/parameterassignment.html">checks/coding/parameterassignment.html</a></td>
+            <td class="number">34</td>
+            <td class="number">-34</td>
+            <td class="gray number">0</td>
+            <td class="number">6265</td>
+            <td class="number">-11340</td>
+            <td class="red number">-5075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/patternvariableassignment.html">checks/coding/patternvariableassignment.html</a></td>
+            <td class="number">26</td>
+            <td class="number">-26</td>
+            <td class="gray number">0</td>
+            <td class="number">6171</td>
+            <td class="number">-11171</td>
+            <td class="red number">-5000</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/requirethis.html">checks/coding/requirethis.html</a></td>
+            <td class="number">105</td>
+            <td class="number">-105</td>
+            <td class="gray number">0</td>
+            <td class="number">18161</td>
+            <td class="number">-32511</td>
+            <td class="red number">-14350</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/returncount.html">checks/coding/returncount.html</a></td>
+            <td class="number">171</td>
+            <td class="number">-171</td>
+            <td class="gray number">0</td>
+            <td class="number">43627</td>
+            <td class="number">-80627</td>
+            <td class="red number">-37000</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/simplifybooleanexpression.html">checks/coding/simplifybooleanexpression.html</a></td>
+            <td class="number">25</td>
+            <td class="number">-25</td>
+            <td class="gray number">0</td>
+            <td class="number">6552</td>
+            <td class="number">-12102</td>
+            <td class="red number">-5550</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/simplifybooleanreturn.html">checks/coding/simplifybooleanreturn.html</a></td>
+            <td class="number">42</td>
+            <td class="number">-42</td>
+            <td class="gray number">0</td>
+            <td class="number">6299</td>
+            <td class="number">-11449</td>
+            <td class="red number">-5150</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/stringliteralequality.html">checks/coding/stringliteralequality.html</a></td>
+            <td class="number">25</td>
+            <td class="number">-25</td>
+            <td class="gray number">0</td>
+            <td class="number">4931</td>
+            <td class="number">-8656</td>
+            <td class="red number">-3725</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/superclone.html">checks/coding/superclone.html</a></td>
+            <td class="number">24</td>
+            <td class="number">-24</td>
+            <td class="gray number">0</td>
+            <td class="number">4138</td>
+            <td class="number">-7513</td>
+            <td class="red number">-3375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/superfinalize.html">checks/coding/superfinalize.html</a></td>
+            <td class="number">15</td>
+            <td class="number">-15</td>
+            <td class="gray number">0</td>
+            <td class="number">2531</td>
+            <td class="number">-4481</td>
+            <td class="red number">-1950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unnecessarynullcheckwithinstanceof.html">checks/coding/unnecessarynullcheckwithinstanceof.html</a></td>
+            <td class="number">44</td>
+            <td class="number">-44</td>
+            <td class="gray number">0</td>
+            <td class="number">9557</td>
+            <td class="number">-17507</td>
+            <td class="red number">-7950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unnecessaryparentheses.html">checks/coding/unnecessaryparentheses.html</a></td>
+            <td class="number">125</td>
+            <td class="number">-125</td>
+            <td class="gray number">0</td>
+            <td class="number">31595</td>
+            <td class="number">-58470</td>
+            <td class="red number">-26875</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unnecessarysemicolonafteroutertypedeclaration.html">checks/coding/unnecessarysemicolonafteroutertypedeclaration.html</a></td>
+            <td class="number">32</td>
+            <td class="number">-32</td>
+            <td class="gray number">0</td>
+            <td class="number">4737</td>
+            <td class="number">-8262</td>
+            <td class="red number">-3525</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unnecessarysemicolonaftertypememberdeclaration.html">checks/coding/unnecessarysemicolonaftertypememberdeclaration.html</a></td>
+            <td class="number">23</td>
+            <td class="number">-23</td>
+            <td class="gray number">0</td>
+            <td class="number">3683</td>
+            <td class="number">-6458</td>
+            <td class="red number">-2775</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unnecessarysemicoloninenumeration.html">checks/coding/unnecessarysemicoloninenumeration.html</a></td>
+            <td class="number">30</td>
+            <td class="number">-30</td>
+            <td class="gray number">0</td>
+            <td class="number">4031</td>
+            <td class="number">-7181</td>
+            <td class="red number">-3150</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unnecessarysemicolonintrywithresources.html">checks/coding/unnecessarysemicolonintrywithresources.html</a></td>
+            <td class="number">34</td>
+            <td class="number">-34</td>
+            <td class="gray number">0</td>
+            <td class="number">7659</td>
+            <td class="number">-13734</td>
+            <td class="red number">-6075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unusedcatchparametershouldbeunnamed.html">checks/coding/unusedcatchparametershouldbeunnamed.html</a></td>
+            <td class="number">27</td>
+            <td class="number">-27</td>
+            <td class="gray number">0</td>
+            <td class="number">5025</td>
+            <td class="number">-9150</td>
+            <td class="red number">-4125</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unusedlambdaparametershouldbeunnamed.html">checks/coding/unusedlambdaparametershouldbeunnamed.html</a></td>
+            <td class="number">18</td>
+            <td class="number">-18</td>
+            <td class="gray number">0</td>
+            <td class="number">4670</td>
+            <td class="number">-8470</td>
+            <td class="red number">-3800</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/unusedlocalvariable.html">checks/coding/unusedlocalvariable.html</a></td>
+            <td class="number">91</td>
+            <td class="number">-91</td>
+            <td class="gray number">0</td>
+            <td class="number">22152</td>
+            <td class="number">-40677</td>
+            <td class="red number">-18525</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/variabledeclarationusagedistance.html">checks/coding/variabledeclarationusagedistance.html</a></td>
+            <td class="number">175</td>
+            <td class="number">-175</td>
+            <td class="gray number">0</td>
+            <td class="number">31936</td>
+            <td class="number">-57736</td>
+            <td class="red number">-25800</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/whenshouldbeused.html">checks/coding/whenshouldbeused.html</a></td>
+            <td class="number">36</td>
+            <td class="number">-36</td>
+            <td class="gray number">0</td>
+            <td class="number">6123</td>
+            <td class="number">-11198</td>
+            <td class="red number">-5075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/designforextension.html">checks/design/designforextension.html</a></td>
+            <td class="number">151</td>
+            <td class="number">-151</td>
+            <td class="gray number">0</td>
+            <td class="number">28965</td>
+            <td class="number">-52965</td>
+            <td class="red number">-24000</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/finalclass.html">checks/design/finalclass.html</a></td>
+            <td class="number">40</td>
+            <td class="number">-40</td>
+            <td class="gray number">0</td>
+            <td class="number">6167</td>
+            <td class="number">-11242</td>
+            <td class="red number">-5075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/hideutilityclassconstructor.html">checks/design/hideutilityclassconstructor.html</a></td>
+            <td class="number">82</td>
+            <td class="number">-82</td>
+            <td class="gray number">0</td>
+            <td class="number">11745</td>
+            <td class="number">-21245</td>
+            <td class="red number">-9500</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/innertypelast.html">checks/design/innertypelast.html</a></td>
+            <td class="number">20</td>
+            <td class="number">-20</td>
+            <td class="gray number">0</td>
+            <td class="number">3321</td>
+            <td class="number">-6071</td>
+            <td class="red number">-2750</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/interfaceistype.html">checks/design/interfaceistype.html</a></td>
+            <td class="number">38</td>
+            <td class="number">-38</td>
+            <td class="gray number">0</td>
+            <td class="number">5432</td>
+            <td class="number">-9507</td>
+            <td class="red number">-4075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/mutableexception.html">checks/design/mutableexception.html</a></td>
+            <td class="number">118</td>
+            <td class="number">-118</td>
+            <td class="gray number">0</td>
+            <td class="number">17891</td>
+            <td class="number">-32666</td>
+            <td class="red number">-14775</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/onetoplevelclass.html">checks/design/onetoplevelclass.html</a></td>
+            <td class="number">20</td>
+            <td class="number">-20</td>
+            <td class="gray number">0</td>
+            <td class="number">3113</td>
+            <td class="number">-5338</td>
+            <td class="red number">-2225</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/sealedshouldhavepermitslist.html">checks/design/sealedshouldhavepermitslist.html</a></td>
+            <td class="number">20</td>
+            <td class="number">-20</td>
+            <td class="gray number">0</td>
+            <td class="number">3733</td>
+            <td class="number">-6558</td>
+            <td class="red number">-2825</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/throwscount.html">checks/design/throwscount.html</a></td>
+            <td class="number">87</td>
+            <td class="number">-87</td>
+            <td class="gray number">0</td>
+            <td class="number">14221</td>
+            <td class="number">-24421</td>
+            <td class="red number">-10200</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/design/visibilitymodifier.html">checks/design/visibilitymodifier.html</a></td>
+            <td class="number">348</td>
+            <td class="number">-348</td>
+            <td class="gray number">0</td>
+            <td class="number">78060</td>
+            <td class="number">-138360</td>
+            <td class="red number">-60300</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/header/header.html">checks/header/header.html</a></td>
+            <td class="number">55</td>
+            <td class="number">-55</td>
+            <td class="gray number">0</td>
+            <td class="number">10979</td>
+            <td class="number">-18454</td>
+            <td class="red number">-7475</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/header/multifileregexpheader.html">checks/header/multifileregexpheader.html</a></td>
+            <td class="number">42</td>
+            <td class="number">-42</td>
+            <td class="gray number">0</td>
+            <td class="number">8804</td>
+            <td class="number">-14754</td>
+            <td class="red number">-5950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/header/regexpheader.html">checks/header/regexpheader.html</a></td>
+            <td class="number">55</td>
+            <td class="number">-55</td>
+            <td class="gray number">0</td>
+            <td class="number">9878</td>
+            <td class="number">-16478</td>
+            <td class="red number">-6600</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/imports/avoidstarimport.html">checks/imports/avoidstarimport.html</a></td>
+            <td class="number">72</td>
+            <td class="number">-72</td>
+            <td class="gray number">0</td>
+            <td class="number">15704</td>
+            <td class="number">-27579</td>
+            <td class="red number">-11875</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/imports/avoidstaticimport.html">checks/imports/avoidstaticimport.html</a></td>
+            <td class="number">21</td>
+            <td class="number">-21</td>
+            <td class="gray number">0</td>
+            <td class="number">4989</td>
+            <td class="number">-8764</td>
+            <td class="red number">-3775</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/imports/customimportorder.html">checks/imports/customimportorder.html</a></td>
+            <td class="number">264</td>
+            <td class="number">-264</td>
+            <td class="gray number">0</td>
+            <td class="number">74188</td>
+            <td class="number">-133013</td>
+            <td class="red number">-58825</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/imports/illegalimport.html">checks/imports/illegalimport.html</a></td>
+            <td class="number">82</td>
+            <td class="number">-82</td>
+            <td class="gray number">0</td>
+            <td class="number">17827</td>
+            <td class="number">-32002</td>
+            <td class="red number">-14175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/imports/importcontrol.html">checks/imports/importcontrol.html</a></td>
+            <td class="number">304</td>
+            <td class="number">-304</td>
+            <td class="gray number">0</td>
+            <td class="number">64939</td>
+            <td class="number">-113614</td>
+            <td class="red number">-48675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/imports/importorder.html">checks/imports/importorder.html</a></td>
+            <td class="number">191</td>
+            <td class="number">-191</td>
+            <td class="gray number">0</td>
+            <td class="number">51913</td>
+            <td class="number">-92963</td>
+            <td class="red number">-41050</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/imports/redundantimport.html">checks/imports/redundantimport.html</a></td>
+            <td class="number">13</td>
+            <td class="number">-13</td>
+            <td class="gray number">0</td>
+            <td class="number">3806</td>
+            <td class="number">-6756</td>
+            <td class="red number">-2950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/imports/unusedimports.html">checks/imports/unusedimports.html</a></td>
+            <td class="number">52</td>
+            <td class="number">-52</td>
+            <td class="gray number">0</td>
+            <td class="number">11821</td>
+            <td class="number">-21446</td>
+            <td class="red number">-9625</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/atclauseorder.html">checks/javadoc/atclauseorder.html</a></td>
+            <td class="number">54</td>
+            <td class="number">-54</td>
+            <td class="gray number">0</td>
+            <td class="number">7596</td>
+            <td class="number">-13396</td>
+            <td class="red number">-5800</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/invalidjavadocposition.html">checks/javadoc/invalidjavadocposition.html</a></td>
+            <td class="number">11</td>
+            <td class="number">-11</td>
+            <td class="gray number">0</td>
+            <td class="number">1557</td>
+            <td class="number">-2657</td>
+            <td class="red number">-1100</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocblocktaglocation.html">checks/javadoc/javadocblocktaglocation.html</a></td>
+            <td class="number">29</td>
+            <td class="number">-29</td>
+            <td class="gray number">0</td>
+            <td class="number">5316</td>
+            <td class="number">-9166</td>
+            <td class="red number">-3850</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadoccontentlocation.html">checks/javadoc/javadoccontentlocation.html</a></td>
+            <td class="number">46</td>
+            <td class="number">-46</td>
+            <td class="gray number">0</td>
+            <td class="number">5611</td>
+            <td class="number">-9511</td>
+            <td class="red number">-3900</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocleadingasteriskalign.html">checks/javadoc/javadocleadingasteriskalign.html</a></td>
+            <td class="number">81</td>
+            <td class="number">-81</td>
+            <td class="gray number">0</td>
+            <td class="number">8369</td>
+            <td class="number">-14744</td>
+            <td class="red number">-6375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocmethod.html">checks/javadoc/javadocmethod.html</a></td>
+            <td class="number">240</td>
+            <td class="number">-240</td>
+            <td class="gray number">0</td>
+            <td class="number">36525</td>
+            <td class="number">-65675</td>
+            <td class="red number">-29150</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocmissingleadingasterisk.html">checks/javadoc/javadocmissingleadingasterisk.html</a></td>
+            <td class="number">26</td>
+            <td class="number">-26</td>
+            <td class="gray number">0</td>
+            <td class="number">2888</td>
+            <td class="number">-5013</td>
+            <td class="red number">-2125</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocmissingwhitespaceafterasterisk.html">checks/javadoc/javadocmissingwhitespaceafterasterisk.html</a></td>
+            <td class="number">22</td>
+            <td class="number">-22</td>
+            <td class="gray number">0</td>
+            <td class="number">2666</td>
+            <td class="number">-4541</td>
+            <td class="red number">-1875</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocpackage.html">checks/javadoc/javadocpackage.html</a></td>
+            <td class="number">22</td>
+            <td class="number">-22</td>
+            <td class="gray number">0</td>
+            <td class="number">5551</td>
+            <td class="number">-9651</td>
+            <td class="red number">-4100</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocparagraph.html">checks/javadoc/javadocparagraph.html</a></td>
+            <td class="number">53</td>
+            <td class="number">-53</td>
+            <td class="gray number">0</td>
+            <td class="number">6072</td>
+            <td class="number">-10197</td>
+            <td class="red number">-4125</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocstyle.html">checks/javadoc/javadocstyle.html</a></td>
+            <td class="number">243</td>
+            <td class="number">-243</td>
+            <td class="gray number">0</td>
+            <td class="number">26956</td>
+            <td class="number">-47956</td>
+            <td class="red number">-21000</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadoctagcontinuationindentation.html">checks/javadoc/javadoctagcontinuationindentation.html</a></td>
+            <td class="number">73</td>
+            <td class="number">-73</td>
+            <td class="gray number">0</td>
+            <td class="number">9323</td>
+            <td class="number">-16373</td>
+            <td class="red number">-7050</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadoctype.html">checks/javadoc/javadoctype.html</a></td>
+            <td class="number">255</td>
+            <td class="number">-255</td>
+            <td class="gray number">0</td>
+            <td class="number">34125</td>
+            <td class="number">-61625</td>
+            <td class="red number">-27500</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/javadocvariable.html">checks/javadoc/javadocvariable.html</a></td>
+            <td class="number">116</td>
+            <td class="number">-116</td>
+            <td class="gray number">0</td>
+            <td class="number">18772</td>
+            <td class="number">-33297</td>
+            <td class="red number">-14525</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/missingjavadocmethod.html">checks/javadoc/missingjavadocmethod.html</a></td>
+            <td class="number">216</td>
+            <td class="number">-216</td>
+            <td class="gray number">0</td>
+            <td class="number">35180</td>
+            <td class="number">-63530</td>
+            <td class="red number">-28350</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/missingjavadocpackage.html">checks/javadoc/missingjavadocpackage.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">2345</td>
+            <td class="number">-4020</td>
+            <td class="red number">-1675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/missingjavadoctype.html">checks/javadoc/missingjavadoctype.html</a></td>
+            <td class="number">68</td>
+            <td class="number">-68</td>
+            <td class="gray number">0</td>
+            <td class="number">12512</td>
+            <td class="number">-21862</td>
+            <td class="red number">-9350</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/nonemptyatclausedescription.html">checks/javadoc/nonemptyatclausedescription.html</a></td>
+            <td class="number">32</td>
+            <td class="number">-32</td>
+            <td class="gray number">0</td>
+            <td class="number">4348</td>
+            <td class="number">-7223</td>
+            <td class="red number">-2875</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/requireemptylinebeforeblocktaggroup.html">checks/javadoc/requireemptylinebeforeblocktaggroup.html</a></td>
+            <td class="number">17</td>
+            <td class="number">-17</td>
+            <td class="gray number">0</td>
+            <td class="number">2190</td>
+            <td class="number">-3815</td>
+            <td class="red number">-1625</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/singlelinejavadoc.html">checks/javadoc/singlelinejavadoc.html</a></td>
+            <td class="number">130</td>
+            <td class="number">-130</td>
+            <td class="gray number">0</td>
+            <td class="number">16509</td>
+            <td class="number">-29884</td>
+            <td class="red number">-13375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/summaryjavadoc.html">checks/javadoc/summaryjavadoc.html</a></td>
+            <td class="number">110</td>
+            <td class="number">-110</td>
+            <td class="gray number">0</td>
+            <td class="number">14383</td>
+            <td class="number">-25758</td>
+            <td class="red number">-11375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/javadoc/writetag.html">checks/javadoc/writetag.html</a></td>
+            <td class="number">100</td>
+            <td class="number">-100</td>
+            <td class="gray number">0</td>
+            <td class="number">14380</td>
+            <td class="number">-25055</td>
+            <td class="red number">-10675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/metrics/booleanexpressioncomplexity.html">checks/metrics/booleanexpressioncomplexity.html</a></td>
+            <td class="number">62</td>
+            <td class="number">-62</td>
+            <td class="gray number">0</td>
+            <td class="number">14353</td>
+            <td class="number">-26003</td>
+            <td class="red number">-11650</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/metrics/classdataabstractioncoupling.html">checks/metrics/classdataabstractioncoupling.html</a></td>
+            <td class="number">215</td>
+            <td class="number">-215</td>
+            <td class="gray number">0</td>
+            <td class="number">53385</td>
+            <td class="number">-96560</td>
+            <td class="red number">-43175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/metrics/classfanoutcomplexity.html">checks/metrics/classfanoutcomplexity.html</a></td>
+            <td class="number">134</td>
+            <td class="number">-134</td>
+            <td class="gray number">0</td>
+            <td class="number">28446</td>
+            <td class="number">-51521</td>
+            <td class="red number">-23075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/metrics/cyclomaticcomplexity.html">checks/metrics/cyclomaticcomplexity.html</a></td>
+            <td class="number">185</td>
+            <td class="number">-185</td>
+            <td class="gray number">0</td>
+            <td class="number">31953</td>
+            <td class="number">-59428</td>
+            <td class="red number">-27475</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/metrics/javancss.html">checks/metrics/javancss.html</a></td>
+            <td class="number">89</td>
+            <td class="number">-89</td>
+            <td class="gray number">0</td>
+            <td class="number">18675</td>
+            <td class="number">-33900</td>
+            <td class="red number">-15225</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/metrics/npathcomplexity.html">checks/metrics/npathcomplexity.html</a></td>
+            <td class="number">83</td>
+            <td class="number">-83</td>
+            <td class="gray number">0</td>
+            <td class="number">18579</td>
+            <td class="number">-34029</td>
+            <td class="red number">-15450</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/arraytypestyle.html">checks/misc/arraytypestyle.html</a></td>
+            <td class="number">32</td>
+            <td class="number">-32</td>
+            <td class="gray number">0</td>
+            <td class="number">5478</td>
+            <td class="number">-9653</td>
+            <td class="red number">-4175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/avoidescapedunicodecharacters.html">checks/misc/avoidescapedunicodecharacters.html</a></td>
+            <td class="number">118</td>
+            <td class="number">-118</td>
+            <td class="gray number">0</td>
+            <td class="number">19849</td>
+            <td class="number">-34974</td>
+            <td class="red number">-15125</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/commentsindentation.html">checks/misc/commentsindentation.html</a></td>
+            <td class="number">143</td>
+            <td class="number">-143</td>
+            <td class="gray number">0</td>
+            <td class="number">19105</td>
+            <td class="number">-34055</td>
+            <td class="red number">-14950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/descendanttoken.html">checks/misc/descendanttoken.html</a></td>
+            <td class="number">592</td>
+            <td class="number">-592</td>
+            <td class="gray number">0</td>
+            <td class="number">101531</td>
+            <td class="number">-185981</td>
+            <td class="red number">-84450</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/finalparameters.html">checks/misc/finalparameters.html</a></td>
+            <td class="number">86</td>
+            <td class="number">-86</td>
+            <td class="gray number">0</td>
+            <td class="number">19729</td>
+            <td class="number">-36104</td>
+            <td class="red number">-16375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/hexliteralcase.html">checks/misc/hexliteralcase.html</a></td>
+            <td class="number">23</td>
+            <td class="number">-23</td>
+            <td class="gray number">0</td>
+            <td class="number">5261</td>
+            <td class="number">-9386</td>
+            <td class="red number">-4125</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/indentation.html">checks/misc/indentation.html</a></td>
+            <td class="number">196</td>
+            <td class="number">-196</td>
+            <td class="gray number">0</td>
+            <td class="number">35023</td>
+            <td class="number">-62973</td>
+            <td class="red number">-27950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/newlineatendoffile.html">checks/misc/newlineatendoffile.html</a></td>
+            <td class="number">35</td>
+            <td class="number">-35</td>
+            <td class="gray number">0</td>
+            <td class="number">8482</td>
+            <td class="number">-14682</td>
+            <td class="red number">-6200</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/nocodeinfile.html">checks/misc/nocodeinfile.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">1496</td>
+            <td class="number">-2421</td>
+            <td class="red number">-925</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/orderedproperties.html">checks/misc/orderedproperties.html</a></td>
+            <td class="number">9</td>
+            <td class="number">-9</td>
+            <td class="gray number">0</td>
+            <td class="number">1473</td>
+            <td class="number">-2498</td>
+            <td class="red number">-1025</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/outertypefilename.html">checks/misc/outertypefilename.html</a></td>
+            <td class="number">14</td>
+            <td class="number">-14</td>
+            <td class="gray number">0</td>
+            <td class="number">2724</td>
+            <td class="number">-4299</td>
+            <td class="red number">-1575</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/todocomment.html">checks/misc/todocomment.html</a></td>
+            <td class="number">32</td>
+            <td class="number">-32</td>
+            <td class="gray number">0</td>
+            <td class="number">5425</td>
+            <td class="number">-9600</td>
+            <td class="red number">-4175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/trailingcomment.html">checks/misc/trailingcomment.html</a></td>
+            <td class="number">109</td>
+            <td class="number">-109</td>
+            <td class="gray number">0</td>
+            <td class="number">20160</td>
+            <td class="number">-35710</td>
+            <td class="red number">-15550</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/translation.html">checks/misc/translation.html</a></td>
+            <td class="number">48</td>
+            <td class="number">-48</td>
+            <td class="gray number">0</td>
+            <td class="number">8671</td>
+            <td class="number">-14246</td>
+            <td class="red number">-5575</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/uncommentedmain.html">checks/misc/uncommentedmain.html</a></td>
+            <td class="number">51</td>
+            <td class="number">-51</td>
+            <td class="gray number">0</td>
+            <td class="number">7521</td>
+            <td class="number">-13546</td>
+            <td class="red number">-6025</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/uniqueproperties.html">checks/misc/uniqueproperties.html</a></td>
+            <td class="number">20</td>
+            <td class="number">-20</td>
+            <td class="gray number">0</td>
+            <td class="number">3618</td>
+            <td class="number">-6218</td>
+            <td class="red number">-2600</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/upperell.html">checks/misc/upperell.html</a></td>
+            <td class="number">10</td>
+            <td class="number">-10</td>
+            <td class="gray number">0</td>
+            <td class="number">1840</td>
+            <td class="number">-3240</td>
+            <td class="red number">-1400</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/modifier/classmemberimpliedmodifier.html">checks/modifier/classmemberimpliedmodifier.html</a></td>
+            <td class="number">30</td>
+            <td class="number">-30</td>
+            <td class="gray number">0</td>
+            <td class="number">4643</td>
+            <td class="number">-8193</td>
+            <td class="red number">-3550</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/modifier/interfacememberimpliedmodifier.html">checks/modifier/interfacememberimpliedmodifier.html</a></td>
+            <td class="number">75</td>
+            <td class="number">-75</td>
+            <td class="gray number">0</td>
+            <td class="number">13472</td>
+            <td class="number">-23497</td>
+            <td class="red number">-10025</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/modifier/modifierorder.html">checks/modifier/modifierorder.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">2457</td>
+            <td class="number">-4282</td>
+            <td class="red number">-1825</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/modifier/redundantmodifier.html">checks/modifier/redundantmodifier.html</a></td>
+            <td class="number">116</td>
+            <td class="number">-116</td>
+            <td class="gray number">0</td>
+            <td class="number">18667</td>
+            <td class="number">-33642</td>
+            <td class="red number">-14975</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/abbreviationaswordinname.html">checks/naming/abbreviationaswordinname.html</a></td>
+            <td class="number">143</td>
+            <td class="number">-143</td>
+            <td class="gray number">0</td>
+            <td class="number">30962</td>
+            <td class="number">-54587</td>
+            <td class="red number">-23625</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/abstractclassname.html">checks/naming/abstractclassname.html</a></td>
+            <td class="number">61</td>
+            <td class="number">-61</td>
+            <td class="gray number">0</td>
+            <td class="number">11521</td>
+            <td class="number">-20446</td>
+            <td class="red number">-8925</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/catchparametername.html">checks/naming/catchparametername.html</a></td>
+            <td class="number">51</td>
+            <td class="number">-51</td>
+            <td class="gray number">0</td>
+            <td class="number">10647</td>
+            <td class="number">-19222</td>
+            <td class="red number">-8575</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/classtypeparametername.html">checks/naming/classtypeparametername.html</a></td>
+            <td class="number">40</td>
+            <td class="number">-40</td>
+            <td class="gray number">0</td>
+            <td class="number">9290</td>
+            <td class="number">-16340</td>
+            <td class="red number">-7050</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/constantname.html">checks/naming/constantname.html</a></td>
+            <td class="number">54</td>
+            <td class="number">-54</td>
+            <td class="gray number">0</td>
+            <td class="number">15225</td>
+            <td class="number">-27600</td>
+            <td class="red number">-12375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/illegalidentifiername.html">checks/naming/illegalidentifiername.html</a></td>
+            <td class="number">52</td>
+            <td class="number">-52</td>
+            <td class="gray number">0</td>
+            <td class="number">9859</td>
+            <td class="number">-17284</td>
+            <td class="red number">-7425</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/interfacetypeparametername.html">checks/naming/interfacetypeparametername.html</a></td>
+            <td class="number">21</td>
+            <td class="number">-21</td>
+            <td class="gray number">0</td>
+            <td class="number">4013</td>
+            <td class="number">-6963</td>
+            <td class="red number">-2950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/lambdaparametername.html">checks/naming/lambdaparametername.html</a></td>
+            <td class="number">28</td>
+            <td class="number">-28</td>
+            <td class="gray number">0</td>
+            <td class="number">6418</td>
+            <td class="number">-11443</td>
+            <td class="red number">-5025</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/localfinalvariablename.html">checks/naming/localfinalvariablename.html</a></td>
+            <td class="number">56</td>
+            <td class="number">-56</td>
+            <td class="gray number">0</td>
+            <td class="number">11215</td>
+            <td class="number">-20240</td>
+            <td class="red number">-9025</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/localvariablename.html">checks/naming/localvariablename.html</a></td>
+            <td class="number">80</td>
+            <td class="number">-80</td>
+            <td class="gray number">0</td>
+            <td class="number">18923</td>
+            <td class="number">-34873</td>
+            <td class="red number">-15950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/membername.html">checks/naming/membername.html</a></td>
+            <td class="number">46</td>
+            <td class="number">-46</td>
+            <td class="gray number">0</td>
+            <td class="number">9208</td>
+            <td class="number">-16358</td>
+            <td class="red number">-7150</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/methodname.html">checks/naming/methodname.html</a></td>
+            <td class="number">90</td>
+            <td class="number">-90</td>
+            <td class="gray number">0</td>
+            <td class="number">19031</td>
+            <td class="number">-33631</td>
+            <td class="red number">-14600</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/methodtypeparametername.html">checks/naming/methodtypeparametername.html</a></td>
+            <td class="number">24</td>
+            <td class="number">-24</td>
+            <td class="gray number">0</td>
+            <td class="number">5774</td>
+            <td class="number">-10449</td>
+            <td class="red number">-4675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/packagename.html">checks/naming/packagename.html</a></td>
+            <td class="number">20</td>
+            <td class="number">-20</td>
+            <td class="gray number">0</td>
+            <td class="number">3882</td>
+            <td class="number">-6807</td>
+            <td class="red number">-2925</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/parametername.html">checks/naming/parametername.html</a></td>
+            <td class="number">70</td>
+            <td class="number">-70</td>
+            <td class="gray number">0</td>
+            <td class="number">14306</td>
+            <td class="number">-25481</td>
+            <td class="red number">-11175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/patternvariablename.html">checks/naming/patternvariablename.html</a></td>
+            <td class="number">73</td>
+            <td class="number">-73</td>
+            <td class="gray number">0</td>
+            <td class="number">16235</td>
+            <td class="number">-29260</td>
+            <td class="red number">-13025</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/recordcomponentname.html">checks/naming/recordcomponentname.html</a></td>
+            <td class="number">22</td>
+            <td class="number">-22</td>
+            <td class="gray number">0</td>
+            <td class="number">4455</td>
+            <td class="number">-7830</td>
+            <td class="red number">-3375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/recordtypeparametername.html">checks/naming/recordtypeparametername.html</a></td>
+            <td class="number">22</td>
+            <td class="number">-22</td>
+            <td class="gray number">0</td>
+            <td class="number">4291</td>
+            <td class="number">-7466</td>
+            <td class="red number">-3175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/staticvariablename.html">checks/naming/staticvariablename.html</a></td>
+            <td class="number">55</td>
+            <td class="number">-55</td>
+            <td class="gray number">0</td>
+            <td class="number">15526</td>
+            <td class="number">-28301</td>
+            <td class="red number">-12775</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/naming/typename.html">checks/naming/typename.html</a></td>
+            <td class="number">55</td>
+            <td class="number">-55</td>
+            <td class="gray number">0</td>
+            <td class="number">11026</td>
+            <td class="number">-19376</td>
+            <td class="red number">-8350</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/regexp/regexp.html">checks/regexp/regexp.html</a></td>
+            <td class="number">149</td>
+            <td class="number">-149</td>
+            <td class="gray number">0</td>
+            <td class="number">25414</td>
+            <td class="number">-44489</td>
+            <td class="red number">-19075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/regexp/regexpmultiline.html">checks/regexp/regexpmultiline.html</a></td>
+            <td class="number">183</td>
+            <td class="number">-183</td>
+            <td class="gray number">0</td>
+            <td class="number">31835</td>
+            <td class="number">-57085</td>
+            <td class="red number">-25250</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/regexp/regexponfilename.html">checks/regexp/regexponfilename.html</a></td>
+            <td class="number">61</td>
+            <td class="number">-61</td>
+            <td class="gray number">0</td>
+            <td class="number">12311</td>
+            <td class="number">-21286</td>
+            <td class="red number">-8975</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/regexp/regexpsingleline.html">checks/regexp/regexpsingleline.html</a></td>
+            <td class="number">77</td>
+            <td class="number">-77</td>
+            <td class="gray number">0</td>
+            <td class="number">14324</td>
+            <td class="number">-25074</td>
+            <td class="red number">-10750</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/regexp/regexpsinglelinejava.html">checks/regexp/regexpsinglelinejava.html</a></td>
+            <td class="number">270</td>
+            <td class="number">-270</td>
+            <td class="gray number">0</td>
+            <td class="number">50193</td>
+            <td class="number">-91868</td>
+            <td class="red number">-41675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/anoninnerlength.html">checks/sizes/anoninnerlength.html</a></td>
+            <td class="number">55</td>
+            <td class="number">-55</td>
+            <td class="gray number">0</td>
+            <td class="number">9567</td>
+            <td class="number">-17142</td>
+            <td class="red number">-7575</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/executablestatementcount.html">checks/sizes/executablestatementcount.html</a></td>
+            <td class="number">57</td>
+            <td class="number">-57</td>
+            <td class="gray number">0</td>
+            <td class="number">9851</td>
+            <td class="number">-17901</td>
+            <td class="red number">-8050</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/filelength.html">checks/sizes/filelength.html</a></td>
+            <td class="number">32</td>
+            <td class="number">-32</td>
+            <td class="gray number">0</td>
+            <td class="number">5812</td>
+            <td class="number">-10212</td>
+            <td class="red number">-4400</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/lambdabodylength.html">checks/sizes/lambdabodylength.html</a></td>
+            <td class="number">71</td>
+            <td class="number">-71</td>
+            <td class="gray number">0</td>
+            <td class="number">14686</td>
+            <td class="number">-26911</td>
+            <td class="red number">-12225</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/linelength.html">checks/sizes/linelength.html</a></td>
+            <td class="number">110</td>
+            <td class="number">-110</td>
+            <td class="gray number">0</td>
+            <td class="number">22473</td>
+            <td class="number">-39923</td>
+            <td class="red number">-17450</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/methodcount.html">checks/sizes/methodcount.html</a></td>
+            <td class="number">83</td>
+            <td class="number">-83</td>
+            <td class="gray number">0</td>
+            <td class="number">18551</td>
+            <td class="number">-33701</td>
+            <td class="red number">-15150</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/methodlength.html">checks/sizes/methodlength.html</a></td>
+            <td class="number">155</td>
+            <td class="number">-155</td>
+            <td class="gray number">0</td>
+            <td class="number">21623</td>
+            <td class="number">-39123</td>
+            <td class="red number">-17500</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/outertypenumber.html">checks/sizes/outertypenumber.html</a></td>
+            <td class="number">27</td>
+            <td class="number">-27</td>
+            <td class="gray number">0</td>
+            <td class="number">4065</td>
+            <td class="number">-7190</td>
+            <td class="red number">-3125</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/parameternumber.html">checks/sizes/parameternumber.html</a></td>
+            <td class="number">99</td>
+            <td class="number">-99</td>
+            <td class="gray number">0</td>
+            <td class="number">26574</td>
+            <td class="number">-48524</td>
+            <td class="red number">-21950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/sizes/recordcomponentnumber.html">checks/sizes/recordcomponentnumber.html</a></td>
+            <td class="number">51</td>
+            <td class="number">-51</td>
+            <td class="gray number">0</td>
+            <td class="number">15284</td>
+            <td class="number">-27909</td>
+            <td class="red number">-12625</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/emptyforinitializerpad.html">checks/whitespace/emptyforinitializerpad.html</a></td>
+            <td class="number">36</td>
+            <td class="number">-36</td>
+            <td class="gray number">0</td>
+            <td class="number">8409</td>
+            <td class="number">-15359</td>
+            <td class="red number">-6950</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/emptyforiteratorpad.html">checks/whitespace/emptyforiteratorpad.html</a></td>
+            <td class="number">37</td>
+            <td class="number">-37</td>
+            <td class="gray number">0</td>
+            <td class="number">8147</td>
+            <td class="number">-14672</td>
+            <td class="red number">-6525</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/emptylineseparator.html">checks/whitespace/emptylineseparator.html</a></td>
+            <td class="number">117</td>
+            <td class="number">-117</td>
+            <td class="gray number">0</td>
+            <td class="number">21488</td>
+            <td class="number">-37788</td>
+            <td class="red number">-16300</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/filetabcharacter.html">checks/whitespace/filetabcharacter.html</a></td>
+            <td class="number">42</td>
+            <td class="number">-42</td>
+            <td class="gray number">0</td>
+            <td class="number">8437</td>
+            <td class="number">-14637</td>
+            <td class="red number">-6200</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/genericwhitespace.html">checks/whitespace/genericwhitespace.html</a></td>
+            <td class="number">21</td>
+            <td class="number">-21</td>
+            <td class="gray number">0</td>
+            <td class="number">5142</td>
+            <td class="number">-9192</td>
+            <td class="red number">-4050</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/methodparampad.html">checks/whitespace/methodparampad.html</a></td>
+            <td class="number">36</td>
+            <td class="number">-36</td>
+            <td class="gray number">0</td>
+            <td class="number">6428</td>
+            <td class="number">-11453</td>
+            <td class="red number">-5025</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/nolinewrap.html">checks/whitespace/nolinewrap.html</a></td>
+            <td class="number">62</td>
+            <td class="number">-62</td>
+            <td class="gray number">0</td>
+            <td class="number">13085</td>
+            <td class="number">-23235</td>
+            <td class="red number">-10150</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/nowhitespaceafter.html">checks/whitespace/nowhitespaceafter.html</a></td>
+            <td class="number">51</td>
+            <td class="number">-51</td>
+            <td class="gray number">0</td>
+            <td class="number">9150</td>
+            <td class="number">-16650</td>
+            <td class="red number">-7500</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/nowhitespacebefore.html">checks/whitespace/nowhitespacebefore.html</a></td>
+            <td class="number">86</td>
+            <td class="number">-86</td>
+            <td class="gray number">0</td>
+            <td class="number">18285</td>
+            <td class="number">-33085</td>
+            <td class="red number">-14800</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/nowhitespacebeforecasedefaultcolon.html">checks/whitespace/nowhitespacebeforecasedefaultcolon.html</a></td>
+            <td class="number">33</td>
+            <td class="number">-33</td>
+            <td class="gray number">0</td>
+            <td class="number">5500</td>
+            <td class="number">-9950</td>
+            <td class="red number">-4450</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/operatorwrap.html">checks/whitespace/operatorwrap.html</a></td>
+            <td class="number">52</td>
+            <td class="number">-52</td>
+            <td class="gray number">0</td>
+            <td class="number">8587</td>
+            <td class="number">-15087</td>
+            <td class="red number">-6500</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/parenpad.html">checks/whitespace/parenpad.html</a></td>
+            <td class="number">60</td>
+            <td class="number">-60</td>
+            <td class="gray number">0</td>
+            <td class="number">11782</td>
+            <td class="number">-21532</td>
+            <td class="red number">-9750</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/separatorwrap.html">checks/whitespace/separatorwrap.html</a></td>
+            <td class="number">59</td>
+            <td class="number">-59</td>
+            <td class="gray number">0</td>
+            <td class="number">10337</td>
+            <td class="number">-18462</td>
+            <td class="red number">-8125</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/singlespaceseparator.html">checks/whitespace/singlespaceseparator.html</a></td>
+            <td class="number">41</td>
+            <td class="number">-41</td>
+            <td class="gray number">0</td>
+            <td class="number">7879</td>
+            <td class="number">-13854</td>
+            <td class="red number">-5975</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/typecastparenpad.html">checks/whitespace/typecastparenpad.html</a></td>
+            <td class="number">28</td>
+            <td class="number">-28</td>
+            <td class="gray number">0</td>
+            <td class="number">6374</td>
+            <td class="number">-11549</td>
+            <td class="red number">-5175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/whitespaceafter.html">checks/whitespace/whitespaceafter.html</a></td>
+            <td class="number">61</td>
+            <td class="number">-61</td>
+            <td class="gray number">0</td>
+            <td class="number">14438</td>
+            <td class="number">-26488</td>
+            <td class="red number">-12050</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/whitespace/whitespacearound.html">checks/whitespace/whitespacearound.html</a></td>
+            <td class="number">190</td>
+            <td class="number">-190</td>
+            <td class="gray number">0</td>
+            <td class="number">35314</td>
+            <td class="number">-63139</td>
+            <td class="red number">-27825</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/cmdline.html">cmdline.html</a></td>
+            <td class="number">802</td>
+            <td class="number">-802</td>
+            <td class="gray number">0</td>
+            <td class="number">217286</td>
+            <td class="number">-397461</td>
+            <td class="red number">-180175</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config.html">config.html</a></td>
+            <td class="number">144</td>
+            <td class="number">-144</td>
+            <td class="gray number">0</td>
+            <td class="number">32355</td>
+            <td class="number">-56130</td>
+            <td class="red number">-23775</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_annotation.html">config_annotation.html</a></td>
+            <td class="number">10</td>
+            <td class="number">-10</td>
+            <td class="gray number">0</td>
+            <td class="number">4386</td>
+            <td class="number">-4386</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_blocks.html">config_blocks.html</a></td>
+            <td class="number">8</td>
+            <td class="number">-8</td>
+            <td class="gray number">0</td>
+            <td class="number">3190</td>
+            <td class="number">-3190</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_coding.html">config_coding.html</a></td>
+            <td class="number">62</td>
+            <td class="number">-62</td>
+            <td class="gray number">0</td>
+            <td class="number">30505</td>
+            <td class="number">-30505</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_design.html">config_design.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">5290</td>
+            <td class="number">-5290</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_filefilters.html">config_filefilters.html</a></td>
+            <td class="number">3</td>
+            <td class="number">-3</td>
+            <td class="gray number">0</td>
+            <td class="number">997</td>
+            <td class="number">-997</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_filters.html">config_filters.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">5609</td>
+            <td class="number">-5609</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_headers.html">config_headers.html</a></td>
+            <td class="number">10</td>
+            <td class="number">-10</td>
+            <td class="gray number">0</td>
+            <td class="number">356</td>
+            <td class="number">-356</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_imports.html">config_imports.html</a></td>
+            <td class="number">10</td>
+            <td class="number">-10</td>
+            <td class="gray number">0</td>
+            <td class="number">4214</td>
+            <td class="number">-4214</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_javadoc.html">config_javadoc.html</a></td>
+            <td class="number">24</td>
+            <td class="number">-24</td>
+            <td class="gray number">0</td>
+            <td class="number">11493</td>
+            <td class="number">-11493</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_metrics.html">config_metrics.html</a></td>
+            <td class="number">8</td>
+            <td class="number">-8</td>
+            <td class="gray number">0</td>
+            <td class="number">3437</td>
+            <td class="number">-3437</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_misc.html">config_misc.html</a></td>
+            <td class="number">19</td>
+            <td class="number">-19</td>
+            <td class="gray number">0</td>
+            <td class="number">8484</td>
+            <td class="number">-8484</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_modifier.html">config_modifier.html</a></td>
+            <td class="number">6</td>
+            <td class="number">-6</td>
+            <td class="gray number">0</td>
+            <td class="number">2473</td>
+            <td class="number">-2473</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_naming.html">config_naming.html</a></td>
+            <td class="number">22</td>
+            <td class="number">-22</td>
+            <td class="gray number">0</td>
+            <td class="number">10195</td>
+            <td class="number">-10195</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_regexp.html">config_regexp.html</a></td>
+            <td class="number">7</td>
+            <td class="number">-7</td>
+            <td class="gray number">0</td>
+            <td class="number">2800</td>
+            <td class="number">-2800</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_sizes.html">config_sizes.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">5169</td>
+            <td class="number">-5169</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_system_properties.html">config_system_properties.html</a></td>
+            <td class="number">43</td>
+            <td class="number">-43</td>
+            <td class="gray number">0</td>
+            <td class="number">11122</td>
+            <td class="number">-19947</td>
+            <td class="red number">-8825</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_whitespace.html">config_whitespace.html</a></td>
+            <td class="number">19</td>
+            <td class="number">-19</td>
+            <td class="gray number">0</td>
+            <td class="number">8732</td>
+            <td class="number">-8732</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filefilters/beforeexecutionexclusionfilefilter.html">filefilters/beforeexecutionexclusionfilefilter.html</a></td>
+            <td class="number">76</td>
+            <td class="number">-76</td>
+            <td class="gray number">0</td>
+            <td class="number">15162</td>
+            <td class="number">-26537</td>
+            <td class="red number">-11375</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/severitymatchfilter.html">filters/severitymatchfilter.html</a></td>
+            <td class="number">17</td>
+            <td class="number">-17</td>
+            <td class="gray number">0</td>
+            <td class="number">3523</td>
+            <td class="number">-6223</td>
+            <td class="red number">-2700</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppressioncommentfilter.html">filters/suppressioncommentfilter.html</a></td>
+            <td class="number">295</td>
+            <td class="number">-295</td>
+            <td class="gray number">0</td>
+            <td class="number">49615</td>
+            <td class="number">-87915</td>
+            <td class="red number">-38300</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppressionfilter.html">filters/suppressionfilter.html</a></td>
+            <td class="number">126</td>
+            <td class="number">-126</td>
+            <td class="gray number">0</td>
+            <td class="number">22894</td>
+            <td class="number">-39494</td>
+            <td class="red number">-16600</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppressionsinglefilter.html">filters/suppressionsinglefilter.html</a></td>
+            <td class="number">163</td>
+            <td class="number">-163</td>
+            <td class="gray number">0</td>
+            <td class="number">31874</td>
+            <td class="number">-56399</td>
+            <td class="red number">-24525</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppressionxpathfilter.html">filters/suppressionxpathfilter.html</a></td>
+            <td class="number">394</td>
+            <td class="number">-394</td>
+            <td class="gray number">0</td>
+            <td class="number">82305</td>
+            <td class="number">-146230</td>
+            <td class="red number">-63925</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppressionxpathsinglefilter.html">filters/suppressionxpathsinglefilter.html</a></td>
+            <td class="number">257</td>
+            <td class="number">-257</td>
+            <td class="gray number">0</td>
+            <td class="number">49325</td>
+            <td class="number">-86250</td>
+            <td class="red number">-36925</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppresswarningsfilter.html">filters/suppresswarningsfilter.html</a></td>
+            <td class="number">40</td>
+            <td class="number">-40</td>
+            <td class="gray number">0</td>
+            <td class="number">8200</td>
+            <td class="number">-14600</td>
+            <td class="red number">-6400</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppresswithnearbycommentfilter.html">filters/suppresswithnearbycommentfilter.html</a></td>
+            <td class="number">151</td>
+            <td class="number">-151</td>
+            <td class="gray number">0</td>
+            <td class="number">30338</td>
+            <td class="number">-53338</td>
+            <td class="red number">-23000</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppresswithnearbytextfilter.html">filters/suppresswithnearbytextfilter.html</a></td>
+            <td class="number">129</td>
+            <td class="number">-129</td>
+            <td class="gray number">0</td>
+            <td class="number">25672</td>
+            <td class="number">-44922</td>
+            <td class="red number">-19250</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppresswithplaintextcommentfilter.html">filters/suppresswithplaintextcommentfilter.html</a></td>
+            <td class="number">243</td>
+            <td class="number">-243</td>
+            <td class="gray number">0</td>
+            <td class="number">48476</td>
+            <td class="number">-85251</td>
+            <td class="red number">-36775</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/property_types.html">property_types.html</a></td>
+            <td class="number">140</td>
+            <td class="number">-140</td>
+            <td class="gray number">0</td>
+            <td class="number">28483</td>
+            <td class="number">-49733</td>
+            <td class="red number">-21250</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/releasenotes_old_1-0_5-9.html">releasenotes_old_1-0_5-9.html</a></td>
+            <td class="number">13</td>
+            <td class="number">-13</td>
+            <td class="gray number">0</td>
+            <td class="number">2627</td>
+            <td class="number">-4627</td>
+            <td class="red number">-2000</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/report_issue.html">report_issue.html</a></td>
+            <td class="number">81</td>
+            <td class="number">-81</td>
+            <td class="gray number">0</td>
+            <td class="number">15464</td>
+            <td class="number">-27689</td>
+            <td class="red number">-12225</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/writingchecks.html">writingchecks.html</a></td>
+            <td class="number">117</td>
+            <td class="number">-117</td>
+            <td class="gray number">0</td>
+            <td class="number">23199</td>
+            <td class="number">-42074</td>
+            <td class="red number">-18875</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/writingfilefilters.html">writingfilefilters.html</a></td>
+            <td class="number">30</td>
+            <td class="number">-30</td>
+            <td class="gray number">0</td>
+            <td class="number">6198</td>
+            <td class="number">-11273</td>
+            <td class="red number">-5075</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/writingfilters.html">writingfilters.html</a></td>
+            <td class="number">32</td>
+            <td class="number">-32</td>
+            <td class="gray number">0</td>
+            <td class="number">6819</td>
+            <td class="number">-12494</td>
+            <td class="red number">-5675</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/writingjavadocchecks.html">writingjavadocchecks.html</a></td>
+            <td class="number">242</td>
+            <td class="number">-242</td>
+            <td class="gray number">0</td>
+            <td class="number">70328</td>
+            <td class="number">-129153</td>
+            <td class="red number">-58825</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/writinglisteners.html">writinglisteners.html</a></td>
+            <td class="number">117</td>
+            <td class="number">-117</td>
+            <td class="gray number">0</td>
+            <td class="number">23864</td>
+            <td class="number">-43514</td>
+            <td class="red number">-19650</td>
+        </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="path">Total</th>
+                    <th class="number">19439</th>
+                    <th class="number">-19439</th>
+                    <th class="number">0</th>
+                    <th class="number">3878012</th>
+                    <th class="number">-6878987</th>
+                    <th class="number">-3000975</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>

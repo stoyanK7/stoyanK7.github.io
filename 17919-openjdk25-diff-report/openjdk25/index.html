@@ -1,0 +1,503 @@
+<html>
+	<head>
+		<title>checkstyle xml difference report</title>
+		<style type="text/css" media="all">@import url("./css/maven-base.css");@import url("./css/maven-theme.css");</style>
+		<link rel="stylesheet" href="./css/site.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<http-equiv http-equiv="Content-Language" content="en"></http-equiv>
+	</head>
+	<body class="composite">
+		<div id="contentBox">
+			<div class="section">
+				<h2 a="Checkstyle XML difference report">Checkstyle XML difference report</h2>
+				This is symmetric difference generated from two checkstyle-result.xml reports. <br/>
+				All matching records from each XML file are deleted, then remaining records are merged into single report. <br>
+		        <a href="https://github.com/checkstyle/contribution/tree/master/patch-diff-report-tool">Utility that generated this report.</a>
+			</div>
+
+			
+				<h2><a name="Configuration" href="#Configuration">Checkstyle configuration report</a></h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Module Name</th>
+								<th>Base properties</th>
+								<th>Patch properties</th>
+							</tr>
+							
+								
+									<tr>
+										<td class="c">Checker</td>
+										
+										<td class="c">
+											
+												severity
+												
+													<li>info</li>
+												
+												<br/>
+											
+												fileExtensions
+												
+													<li>java</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												severity
+												
+													<li>info</li>
+												
+												<br/>
+											
+												fileExtensions
+												
+													<li>java</li>
+												
+												<br/>
+											
+												charset
+												
+													<li>UTF-8</li>
+												
+												<br/>
+											
+												haltOnException
+												
+													<li>false</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">TreeWalker</td>
+										
+										<td class="c">
+											
+												skipFileOnJavaParseException
+												
+													<li>true</li>
+												
+												<br/>
+											
+												javaParseExceptionSeverity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												skipFileOnJavaParseException
+												
+													<li>true</li>
+												
+												<br/>
+											
+												javaParseExceptionSeverity
+												
+													<li>warning</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+										
+									<tr>
+										<td class="c">AvoidStarImport</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">AvoidStaticImport</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">IllegalImport</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">ImportOrder</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">UnusedImports</td>
+										
+										<td class="c">
+											
+										</td>
+										
+										
+										<td class="c">
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+										
+									<tr>
+										<td class="c">SuppressionXpathSingleFilter</td>
+										
+										<td class="c">
+											
+												message
+												
+													<li>Javadoc comment at column \d+ has parse error</li>
+												
+												<br/>
+											
+										</td>
+										
+										
+										<td class="c">
+											
+												message
+												
+													<li>Javadoc comment at column \d+ has parse error</li>
+												
+												<br/>
+											
+										</td>
+										
+									</tr>
+									
+								
+									
+								
+									
+								
+								
+					</table>	
+				</div>
+			
+
+			<div class="section">
+				<h2><a name="Summary" href="#Summary">Summary:</a></h2>
+				<div class="section">
+					<table border="0" class="bodyTable">
+						<tr class="a">
+							<th>Report id</th>
+							<th>Files</th>
+							<th>Violations</th>
+							
+								<th>Severity-warning</th>
+							
+								<th>Severity-info</th>
+							
+						</tr>
+						<tr class="b">
+							<td>base</td>
+							<td id="filesBase">51378</td>
+							<td id="totalBase">114251</td>
+							
+								<td id="warningSeverityNumBase">641</td>
+							
+								<td id="infoSeverityNumBase">113610</td>
+							
+						</tr>
+						<tr class="a">
+							<td>patch</td>
+							<td id="filesPatch">51378</td>
+							<td id="totalPatch">114247 (4 removed)</td>
+							
+								<td id="warningSeverityStatisticsPatch">637 (4 removed)</td>
+							
+								<td id="infoSeverityStatisticsPatch">113610</td>
+							
+						</tr>
+						<tr class="d">
+							<td/>
+							<td id="filesDiff">4 files with differences</td>
+							<td id="totalDiff">4 changes in violations</td>
+							
+								<td id="warningSeverityNumDiff">4 changes in violations</td>
+							
+								<td id="infoSeverityNumDiff">0 changes in violations</td>
+							
+						<tr>
+					</table>
+
+					
+						<br />
+						<table border="0" class="bodyTable">
+							<tr class="a">
+								<th>Report id</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheck</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheck</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.imports.IllegalImportCheck</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck</th>
+								
+									<th>com.puppycrawl.tools.checkstyle.TreeWalker</th>
+								
+							</tr>
+							<tr class="b">
+								<td>base</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheckModuleNumBase">12754</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheckModuleNumBase">47852</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheckModuleNumBase">36389</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.IllegalImportCheckModuleNumBase">9338</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheckModuleNumBase">7277</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.TreeWalkerModuleNumBase">641</td>
+								
+							</tr>
+							<tr class="a">
+								<td>patch</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheckModuleStatisticsPatch">12754</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheckModuleStatisticsPatch">47852</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheckModuleStatisticsPatch">36389</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.IllegalImportCheckModuleStatisticsPatch">9338</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheckModuleStatisticsPatch">7277</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.TreeWalkerModuleStatisticsPatch">637 (4 removed)</td>
+								
+							</tr>
+							<tr class="d">
+								<td>changes in violations</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStaticImportCheckModuleNumDiff">0</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.ImportOrderCheckModuleNumDiff">0</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheckModuleNumDiff">0</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.IllegalImportCheckModuleNumDiff">0</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheckModuleNumDiff">0</td>
+								
+									<td id="com.puppycrawl.tools.checkstyle.TreeWalkerModuleNumDiff">4</td>
+								
+							<tr>
+						</table>
+					
+
+					<br />
+					Number of unique base messages reported below: <span id="uniqueMessagesBase">4</span><br />
+					Number of unique patch messages reported below: <span id="uniqueMessagesPatch">0</span><br />
+				</div>
+			</div>
+
+			<div class="section">
+				<h2><a name="Violations" href="#Violations">Violations:</a></h2>
+				<div class="section">
+					<h3>/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModule.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A1" href = "#A1">#A1</a></td>
+								<td>warning</td>
+								<td>TreeWalker</td>
+								<td>Java specific (TreeWalker-based) modules are skipped due to an exception during parsing - IllegalStateException occurred while parsing file /home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModule.java.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModule.java.html#L1">1</a></td>
+								
+								
+									<td class="keepWidth"> </td>
+									
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleDoesNotRead/test/Test.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A2" href = "#A2">#A2</a></td>
+								<td>warning</td>
+								<td>TreeWalker</td>
+								<td>Java specific (TreeWalker-based) modules are skipped due to an exception during parsing - IllegalStateException occurred while parsing file /home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleDoesNotRead/test/Test.java.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleDoesNotRead/test/Test.java.html#L1">1</a></td>
+								
+								
+									<td class="keepWidth"> </td>
+									
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleDoesNotReadUnnamed.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A3" href = "#A3">#A3</a></td>
+								<td>warning</td>
+								<td>TreeWalker</td>
+								<td>Java specific (TreeWalker-based) modules are skipped due to an exception during parsing - IllegalStateException occurred while parsing file /home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleDoesNotReadUnnamed.java.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleDoesNotReadUnnamed.java.html#L1">1</a></td>
+								
+								
+									<td class="keepWidth"> </td>
+									
+								
+							</tr>
+						
+					</table>
+				</div>
+				<div class="section">
+					<h3>/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleNotFound.java</h3>
+					<tr class="b">
+					<table border="0" class="bodyTable">
+					        <th></th>
+							<th>Severity</th>
+							<th>Rule</th>
+							<th>Message</th>
+							<th>Line</th>
+							<th>Col</th>
+						</tr>
+						
+							
+								<tr class="b">
+								
+								<td class="keepWidth"><a name="A4" href = "#A4">#A4</a></td>
+								<td>warning</td>
+								<td>TreeWalker</td>
+								<td>Java specific (TreeWalker-based) modules are skipped due to an exception during parsing - IllegalStateException occurred while parsing file /home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleNotFound.java.</td>
+								
+									
+									<td class="keepWidth"><a href = "xref/home/stoyan/Documents/github/contribution/checkstyle-tester/repositories/openjdk25/test/langtools/tools/javac/diags/examples/ImportModuleNotFound.java.html#L1">1</a></td>
+								
+								
+									<td class="keepWidth"> </td>
+									
+								
+							</tr>
+						
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

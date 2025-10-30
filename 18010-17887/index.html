@@ -1,0 +1,407 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkstyle Website Rendered HTML Diff Report</title>
+    <style>
+        :root {
+            --border: #e5e7eb;
+            --bg: #ffffff;
+            --bg-alt: #fafafa;
+            --bg-hover: #f3f4f6;
+            --head-bg: #f8fafc;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+            line-height: 1.4;
+            color: #0f172a;
+            background: #fff;
+            padding: 1rem;
+        }
+
+        .table-wrap {
+            max-width: 100%;
+        }
+
+        table {
+            width: fit-content;
+            max-width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        th,
+        td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid var(--border);
+            white-space: normal;
+            word-break: break-word;
+            overflow-wrap: anywhere;
+        }
+
+        thead th, tfoot th {
+            position: sticky;
+            top: 0;
+            z-index: 5;
+            background: var(--head-bg);
+            text-align: left;
+            font-weight: 600;
+        }
+
+        tfoot th {
+            top: auto;
+            bottom: 0;
+            border-top: 2px solid var(--border);
+        }
+
+        .path {
+            white-space: normal;
+            word-break: break-word;
+            min-width: 10ch;
+        }
+
+        .number {
+            white-space: nowrap;
+        }
+
+        .number {
+            text-align: right;
+            white-space: nowrap;
+            font-variant-numeric: tabular-nums;
+        }
+
+        tbody tr:nth-child(odd) td {
+            background-color: var(--bg-alt);
+        }
+
+        tbody tr:hover td {
+            background-color: var(--bg-hover);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: 0;
+        }
+
+        td.green {
+            background-color: #8bffb6 !important;
+        }
+
+        td.red {
+            background-color: #e76565 !important;
+        }
+
+        td.gray {
+            background-color: #cccccc !important;
+        }
+
+        span.branch {
+            background-color: #d4d4d4;
+            padding: 0 2px;
+        }
+
+        @media (max-width: 700px) {
+
+            th,
+            td {
+                padding: 0.45rem 0.6rem;
+            }
+
+            body {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Checkstyle Rendered Site Diff Report</h1>
+    <h2>Comparison between branches <span class="branch">18010</span> and <span class="branch">17887</span></h2>
+    <p><small>Note: “Rendered Site” refers to the HTML after executing JavaScript.</small></p>
+    <p>Some remarks:</p>
+    <ul>
+        <li>
+            <small>Only HTML files are compared</small>
+        </li>
+        <li>
+            <small>Files with no diff are not in the table</small>
+        </li>
+        <li>
+            <small>Each <i>Webpage</i> on the table is a link to a diff</small>
+        </li>
+    </ul>
+    <div class="table-wrap">
+        <table>
+            <thead>
+                <tr>
+                    <th class="path">Webpage</th>
+                    <th class="number">Lines<br>added</th>
+                    <th class="number">Lines<br>removed</th>
+                    <th class="number">Lines<br>diff</th>
+                    <th class="number">Characters<br>added</th>
+                    <th class="number">Characters<br>removed</th>
+                    <th class="number">Characters<br>diff</th>
+                </tr>
+            </thead>
+            <tbody>
+                        <tr>
+            <td class="path"><a href="./diff2html/beginning_development.html">beginning_development.html</a></td>
+            <td class="number">8</td>
+            <td class="number">-8</td>
+            <td class="gray number">0</td>
+            <td class="number">1809</td>
+            <td class="number">-1801</td>
+            <td class="green number">+8</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/coding/matchxpath.html">checks/coding/matchxpath.html</a></td>
+            <td class="number">2</td>
+            <td class="number">-2</td>
+            <td class="gray number">0</td>
+            <td class="number">1080</td>
+            <td class="number">-1078</td>
+            <td class="green number">+2</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/checks/misc/trailingcomment.html">checks/misc/trailingcomment.html</a></td>
+            <td class="number">1</td>
+            <td class="number">-1</td>
+            <td class="gray number">0</td>
+            <td class="number">313</td>
+            <td class="number">-312</td>
+            <td class="green number">+1</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/cmdline.html">cmdline.html</a></td>
+            <td class="number">13</td>
+            <td class="number">-12</td>
+            <td class="green number">+1</td>
+            <td class="number">5700</td>
+            <td class="number">-5689</td>
+            <td class="green number">+11</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_annotation.html">config_annotation.html</a></td>
+            <td class="number">10</td>
+            <td class="number">-10</td>
+            <td class="gray number">0</td>
+            <td class="number">4386</td>
+            <td class="number">-4386</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_blocks.html">config_blocks.html</a></td>
+            <td class="number">8</td>
+            <td class="number">-8</td>
+            <td class="gray number">0</td>
+            <td class="number">3190</td>
+            <td class="number">-3190</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_coding.html">config_coding.html</a></td>
+            <td class="number">62</td>
+            <td class="number">-62</td>
+            <td class="gray number">0</td>
+            <td class="number">30505</td>
+            <td class="number">-30505</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_design.html">config_design.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">5290</td>
+            <td class="number">-5290</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_filefilters.html">config_filefilters.html</a></td>
+            <td class="number">3</td>
+            <td class="number">-3</td>
+            <td class="gray number">0</td>
+            <td class="number">997</td>
+            <td class="number">-997</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_filters.html">config_filters.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">5609</td>
+            <td class="number">-5609</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_headers.html">config_headers.html</a></td>
+            <td class="number">10</td>
+            <td class="number">-10</td>
+            <td class="gray number">0</td>
+            <td class="number">356</td>
+            <td class="number">-356</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_imports.html">config_imports.html</a></td>
+            <td class="number">10</td>
+            <td class="number">-10</td>
+            <td class="gray number">0</td>
+            <td class="number">4214</td>
+            <td class="number">-4214</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_javadoc.html">config_javadoc.html</a></td>
+            <td class="number">24</td>
+            <td class="number">-24</td>
+            <td class="gray number">0</td>
+            <td class="number">11493</td>
+            <td class="number">-11493</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_metrics.html">config_metrics.html</a></td>
+            <td class="number">8</td>
+            <td class="number">-8</td>
+            <td class="gray number">0</td>
+            <td class="number">3437</td>
+            <td class="number">-3437</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_misc.html">config_misc.html</a></td>
+            <td class="number">19</td>
+            <td class="number">-19</td>
+            <td class="gray number">0</td>
+            <td class="number">8484</td>
+            <td class="number">-8484</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_modifier.html">config_modifier.html</a></td>
+            <td class="number">6</td>
+            <td class="number">-6</td>
+            <td class="gray number">0</td>
+            <td class="number">2473</td>
+            <td class="number">-2473</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_naming.html">config_naming.html</a></td>
+            <td class="number">22</td>
+            <td class="number">-22</td>
+            <td class="gray number">0</td>
+            <td class="number">10195</td>
+            <td class="number">-10195</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_regexp.html">config_regexp.html</a></td>
+            <td class="number">7</td>
+            <td class="number">-7</td>
+            <td class="gray number">0</td>
+            <td class="number">2800</td>
+            <td class="number">-2800</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_sizes.html">config_sizes.html</a></td>
+            <td class="number">12</td>
+            <td class="number">-12</td>
+            <td class="gray number">0</td>
+            <td class="number">5169</td>
+            <td class="number">-5169</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_system_properties.html">config_system_properties.html</a></td>
+            <td class="number">2</td>
+            <td class="number">-2</td>
+            <td class="gray number">0</td>
+            <td class="number">1158</td>
+            <td class="number">-1156</td>
+            <td class="green number">+2</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/config_whitespace.html">config_whitespace.html</a></td>
+            <td class="number">19</td>
+            <td class="number">-19</td>
+            <td class="gray number">0</td>
+            <td class="number">8732</td>
+            <td class="number">-8732</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/filters/suppressionxpathfilter.html">filters/suppressionxpathfilter.html</a></td>
+            <td class="number">2</td>
+            <td class="number">-2</td>
+            <td class="gray number">0</td>
+            <td class="number">998</td>
+            <td class="number">-996</td>
+            <td class="green number">+2</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/property_types.html">property_types.html</a></td>
+            <td class="number">2</td>
+            <td class="number">-2</td>
+            <td class="gray number">0</td>
+            <td class="number">616</td>
+            <td class="number">-614</td>
+            <td class="green number">+2</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/report_issue.html">report_issue.html</a></td>
+            <td class="number">5</td>
+            <td class="number">-2</td>
+            <td class="green number">+3</td>
+            <td class="number">326</td>
+            <td class="number">-326</td>
+            <td class="gray number">0</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/writingchecks.html">writingchecks.html</a></td>
+            <td class="number">5</td>
+            <td class="number">-5</td>
+            <td class="gray number">0</td>
+            <td class="number">2374</td>
+            <td class="number">-2369</td>
+            <td class="green number">+5</td>
+        </tr>
+        <tr>
+            <td class="path"><a href="./diff2html/writingjavadocchecks.html">writingjavadocchecks.html</a></td>
+            <td class="number">10</td>
+            <td class="number">-10</td>
+            <td class="gray number">0</td>
+            <td class="number">3877</td>
+            <td class="number">-3867</td>
+            <td class="green number">+10</td>
+        </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th class="path">Total</th>
+                    <th class="number">294</th>
+                    <th class="number">-290</th>
+                    <th class="number">4</th>
+                    <th class="number">125581</th>
+                    <th class="number">-125538</th>
+                    <th class="number">43</th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
